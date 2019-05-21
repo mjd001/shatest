@@ -1,0 +1,915 @@
+%   WALNUT DSA FREE REDUCTION ROM DATA FOR WALNUT DSA B10M31 KEY VERIFICATION LOGIC      %
+%   TARGET: ALTERA P/N 5CSEBA6U23I7NDK HOSTED ON TERASIC DE-10-NANO                      %
+%   IP ROM LIBRARY: altsyncram     PARAMETER:      16 X 1024                             %
+%   GENERATED:  10/03/18 21:09:20                                                        %
+%----------------------------------------------------------------------------------------%
+
+% Sub-Braid  0:   08  07  06  05  04  03  02  01  00  00  11  12  13  14  15  16  17  18 %
+% Sub-Braid  1:   08  07  06  05  04  03  02  01  01  12  13  14  15  16  17  18         %
+% Sub-Braid  2:   08  07  06  05  04  03  02  02  13  14  15  16  17  18                 %
+% Sub-Braid  3:   08  07  06  05  04  03  03  14  15  16  17  18                         %
+% Sub-Braid  4:   08  07  06  05  04  04  15  16  17  18                                 %
+% Sub-Braid  5:   08  07  06  05  05  16  17  18                                         %
+% Sub-Braid  6:   08  07  06  06  17  18                                                 %
+% Sub-Braid  7:   08  07  07  18                                                         %
+% Sub-Braid  8:   08  08                                                                 %
+
+WIDTH=16;
+DEPTH=1024;
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+CONTENT BEGIN
+
+	0       :   0109;  % MID TRIPLET: { 0, 0, 0 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 9   ->   0x00  0x00  % 
+	1       :   0109;  % MID TRIPLET: { 0, 0, 1 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 9   ->   0x00  0x00  % 
+	2       :   010a;  % MID TRIPLET: { 0, 0, 2 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 10  ->   0x00  0x00  0x11  % 
+	3       :   010b;  % MID TRIPLET: { 0, 0, 3 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 11  ->   0x00  0x00  0x11  0x12  % 
+	4       :   010c;  % MID TRIPLET: { 0, 0, 4 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 12  ->   0x00  0x00  0x11  0x12  0x13  % 
+	5       :   010d;  % MID TRIPLET: { 0, 0, 5 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 13  ->   0x00  0x00  0x11  0x12  0x13  0x14  % 
+	6       :   010e;  % MID TRIPLET: { 0, 0, 6 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 14  ->   0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	7       :   010f;  % MID TRIPLET: { 0, 0, 7 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 15  ->   0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	8       :   0110;  % MID TRIPLET: { 0, 0, 8 },   SUB-BRAID = 0 ,    START = 8 ,    STOP = 16  ->   0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	9       :   0508;  % MID TRIPLET: { 0, 1, 0 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 8   ->   0x01  % 
+	10      :   0508;  % MID TRIPLET: { 0, 1, 1 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 8   ->   0x01  % 
+	11      :   0508;  % MID TRIPLET: { 0, 1, 2 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 8   ->   0x01  % 
+	12      :   0509;  % MID TRIPLET: { 0, 1, 3 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 9   ->   0x01  0x12  % 
+	13      :   050a;  % MID TRIPLET: { 0, 1, 4 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 10  ->   0x01  0x12  0x13  % 
+	14      :   050b;  % MID TRIPLET: { 0, 1, 5 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 11  ->   0x01  0x12  0x13  0x14  % 
+	15      :   050c;  % MID TRIPLET: { 0, 1, 6 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 12  ->   0x01  0x12  0x13  0x14  0x15  % 
+	16      :   050d;  % MID TRIPLET: { 0, 1, 7 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 13  ->   0x01  0x12  0x13  0x14  0x15  0x16  % 
+	17      :   050e;  % MID TRIPLET: { 0, 1, 8 },   SUB-BRAID = 1 ,    START = 8 ,    STOP = 14  ->   0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	18      :   08e7;  % MID TRIPLET: { 0, 2, 0 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	19      :   08e7;  % MID TRIPLET: { 0, 2, 1 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	20      :   08e7;  % MID TRIPLET: { 0, 2, 2 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	21      :   08e7;  % MID TRIPLET: { 0, 2, 3 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	22      :   08e8;  % MID TRIPLET: { 0, 2, 4 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 8   ->   0x02  0x13  % 
+	23      :   08e9;  % MID TRIPLET: { 0, 2, 5 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 9   ->   0x02  0x13  0x14  % 
+	24      :   08ea;  % MID TRIPLET: { 0, 2, 6 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 10  ->   0x02  0x13  0x14  0x15  % 
+	25      :   08eb;  % MID TRIPLET: { 0, 2, 7 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 11  ->   0x02  0x13  0x14  0x15  0x16  % 
+	26      :   08ec;  % MID TRIPLET: { 0, 2, 8 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 12  ->   0x02  0x13  0x14  0x15  0x16  0x17  % 
+	27      :   0cc6;  % MID TRIPLET: { 0, 3, 0 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	28      :   0cc6;  % MID TRIPLET: { 0, 3, 1 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	29      :   0cc6;  % MID TRIPLET: { 0, 3, 2 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	30      :   0cc6;  % MID TRIPLET: { 0, 3, 3 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	31      :   0cc6;  % MID TRIPLET: { 0, 3, 4 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	32      :   0cc7;  % MID TRIPLET: { 0, 3, 5 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 7   ->   0x03  0x14  % 
+	33      :   0cc8;  % MID TRIPLET: { 0, 3, 6 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 8   ->   0x03  0x14  0x15  % 
+	34      :   0cc9;  % MID TRIPLET: { 0, 3, 7 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 9   ->   0x03  0x14  0x15  0x16  % 
+	35      :   0cca;  % MID TRIPLET: { 0, 3, 8 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 10  ->   0x03  0x14  0x15  0x16  0x17  % 
+	36      :   10a5;  % MID TRIPLET: { 0, 4, 0 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	37      :   10a5;  % MID TRIPLET: { 0, 4, 1 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	38      :   10a5;  % MID TRIPLET: { 0, 4, 2 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	39      :   10a5;  % MID TRIPLET: { 0, 4, 3 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	40      :   10a5;  % MID TRIPLET: { 0, 4, 4 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	41      :   10a5;  % MID TRIPLET: { 0, 4, 5 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	42      :   10a6;  % MID TRIPLET: { 0, 4, 6 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 6   ->   0x04  0x15  % 
+	43      :   10a7;  % MID TRIPLET: { 0, 4, 7 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 7   ->   0x04  0x15  0x16  % 
+	44      :   10a8;  % MID TRIPLET: { 0, 4, 8 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 8   ->   0x04  0x15  0x16  0x17  % 
+	45      :   1484;  % MID TRIPLET: { 0, 5, 0 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	46      :   1484;  % MID TRIPLET: { 0, 5, 1 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	47      :   1484;  % MID TRIPLET: { 0, 5, 2 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	48      :   1484;  % MID TRIPLET: { 0, 5, 3 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	49      :   1484;  % MID TRIPLET: { 0, 5, 4 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	50      :   1484;  % MID TRIPLET: { 0, 5, 5 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	51      :   1484;  % MID TRIPLET: { 0, 5, 6 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	52      :   1485;  % MID TRIPLET: { 0, 5, 7 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 5   ->   0x05  0x16  % 
+	53      :   1486;  % MID TRIPLET: { 0, 5, 8 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 6   ->   0x05  0x16  0x17  % 
+	54      :   1863;  % MID TRIPLET: { 0, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	55      :   1863;  % MID TRIPLET: { 0, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	56      :   1863;  % MID TRIPLET: { 0, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	57      :   1863;  % MID TRIPLET: { 0, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	58      :   1863;  % MID TRIPLET: { 0, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	59      :   1863;  % MID TRIPLET: { 0, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	60      :   1863;  % MID TRIPLET: { 0, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	61      :   1863;  % MID TRIPLET: { 0, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	62      :   1864;  % MID TRIPLET: { 0, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	63      :   1c42;  % MID TRIPLET: { 0, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	64      :   1c42;  % MID TRIPLET: { 0, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	65      :   1c42;  % MID TRIPLET: { 0, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	66      :   1c42;  % MID TRIPLET: { 0, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	67      :   1c42;  % MID TRIPLET: { 0, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	68      :   1c42;  % MID TRIPLET: { 0, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	69      :   1c42;  % MID TRIPLET: { 0, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	70      :   1c42;  % MID TRIPLET: { 0, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	71      :   1c42;  % MID TRIPLET: { 0, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	72      :   2021;  % MID TRIPLET: { 0, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	73      :   2021;  % MID TRIPLET: { 0, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	74      :   2021;  % MID TRIPLET: { 0, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	75      :   2021;  % MID TRIPLET: { 0, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	76      :   2021;  % MID TRIPLET: { 0, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	77      :   2021;  % MID TRIPLET: { 0, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	78      :   2021;  % MID TRIPLET: { 0, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	79      :   2021;  % MID TRIPLET: { 0, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	80      :   2021;  % MID TRIPLET: { 0, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	81      :   00e9;  % MID TRIPLET: { 1, 0, 0 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 9   ->   0x01  0x00  0x00  % 
+	82      :   00e9;  % MID TRIPLET: { 1, 0, 1 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 9   ->   0x01  0x00  0x00  % 
+	83      :   00ea;  % MID TRIPLET: { 1, 0, 2 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 10  ->   0x01  0x00  0x00  0x11  % 
+	84      :   00eb;  % MID TRIPLET: { 1, 0, 3 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 11  ->   0x01  0x00  0x00  0x11  0x12  % 
+	85      :   00ec;  % MID TRIPLET: { 1, 0, 4 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 12  ->   0x01  0x00  0x00  0x11  0x12  0x13  % 
+	86      :   00ed;  % MID TRIPLET: { 1, 0, 5 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 13  ->   0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	87      :   00ee;  % MID TRIPLET: { 1, 0, 6 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 14  ->   0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	88      :   00ef;  % MID TRIPLET: { 1, 0, 7 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 15  ->   0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	89      :   00f0;  % MID TRIPLET: { 1, 0, 8 },   SUB-BRAID = 0 ,    START = 7 ,    STOP = 16  ->   0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	90      :   04e8;  % MID TRIPLET: { 1, 1, 0 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 8   ->   0x01  0x01  % 
+	91      :   04e8;  % MID TRIPLET: { 1, 1, 1 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 8   ->   0x01  0x01  % 
+	92      :   04e8;  % MID TRIPLET: { 1, 1, 2 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 8   ->   0x01  0x01  % 
+	93      :   04e9;  % MID TRIPLET: { 1, 1, 3 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 9   ->   0x01  0x01  0x12  % 
+	94      :   04ea;  % MID TRIPLET: { 1, 1, 4 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 10  ->   0x01  0x01  0x12  0x13  % 
+	95      :   04eb;  % MID TRIPLET: { 1, 1, 5 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 11  ->   0x01  0x01  0x12  0x13  0x14  % 
+	96      :   04ec;  % MID TRIPLET: { 1, 1, 6 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 12  ->   0x01  0x01  0x12  0x13  0x14  0x15  % 
+	97      :   04ed;  % MID TRIPLET: { 1, 1, 7 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 13  ->   0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	98      :   04ee;  % MID TRIPLET: { 1, 1, 8 },   SUB-BRAID = 1 ,    START = 7 ,    STOP = 14  ->   0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	99      :   08e7;  % MID TRIPLET: { 1, 2, 0 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	100     :   08e7;  % MID TRIPLET: { 1, 2, 1 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	101     :   08e7;  % MID TRIPLET: { 1, 2, 2 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	102     :   08e7;  % MID TRIPLET: { 1, 2, 3 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 7   ->   0x02  % 
+	103     :   08e8;  % MID TRIPLET: { 1, 2, 4 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 8   ->   0x02  0x13  % 
+	104     :   08e9;  % MID TRIPLET: { 1, 2, 5 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 9   ->   0x02  0x13  0x14  % 
+	105     :   08ea;  % MID TRIPLET: { 1, 2, 6 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 10  ->   0x02  0x13  0x14  0x15  % 
+	106     :   08eb;  % MID TRIPLET: { 1, 2, 7 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 11  ->   0x02  0x13  0x14  0x15  0x16  % 
+	107     :   08ec;  % MID TRIPLET: { 1, 2, 8 },   SUB-BRAID = 2 ,    START = 7 ,    STOP = 12  ->   0x02  0x13  0x14  0x15  0x16  0x17  % 
+	108     :   0cc6;  % MID TRIPLET: { 1, 3, 0 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	109     :   0cc6;  % MID TRIPLET: { 1, 3, 1 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	110     :   0cc6;  % MID TRIPLET: { 1, 3, 2 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	111     :   0cc6;  % MID TRIPLET: { 1, 3, 3 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	112     :   0cc6;  % MID TRIPLET: { 1, 3, 4 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	113     :   0cc7;  % MID TRIPLET: { 1, 3, 5 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 7   ->   0x03  0x14  % 
+	114     :   0cc8;  % MID TRIPLET: { 1, 3, 6 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 8   ->   0x03  0x14  0x15  % 
+	115     :   0cc9;  % MID TRIPLET: { 1, 3, 7 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 9   ->   0x03  0x14  0x15  0x16  % 
+	116     :   0cca;  % MID TRIPLET: { 1, 3, 8 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 10  ->   0x03  0x14  0x15  0x16  0x17  % 
+	117     :   10a5;  % MID TRIPLET: { 1, 4, 0 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	118     :   10a5;  % MID TRIPLET: { 1, 4, 1 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	119     :   10a5;  % MID TRIPLET: { 1, 4, 2 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	120     :   10a5;  % MID TRIPLET: { 1, 4, 3 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	121     :   10a5;  % MID TRIPLET: { 1, 4, 4 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	122     :   10a5;  % MID TRIPLET: { 1, 4, 5 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	123     :   10a6;  % MID TRIPLET: { 1, 4, 6 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 6   ->   0x04  0x15  % 
+	124     :   10a7;  % MID TRIPLET: { 1, 4, 7 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 7   ->   0x04  0x15  0x16  % 
+	125     :   10a8;  % MID TRIPLET: { 1, 4, 8 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 8   ->   0x04  0x15  0x16  0x17  % 
+	126     :   1484;  % MID TRIPLET: { 1, 5, 0 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	127     :   1484;  % MID TRIPLET: { 1, 5, 1 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	128     :   1484;  % MID TRIPLET: { 1, 5, 2 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	129     :   1484;  % MID TRIPLET: { 1, 5, 3 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	130     :   1484;  % MID TRIPLET: { 1, 5, 4 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	131     :   1484;  % MID TRIPLET: { 1, 5, 5 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	132     :   1484;  % MID TRIPLET: { 1, 5, 6 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	133     :   1485;  % MID TRIPLET: { 1, 5, 7 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 5   ->   0x05  0x16  % 
+	134     :   1486;  % MID TRIPLET: { 1, 5, 8 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 6   ->   0x05  0x16  0x17  % 
+	135     :   1863;  % MID TRIPLET: { 1, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	136     :   1863;  % MID TRIPLET: { 1, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	137     :   1863;  % MID TRIPLET: { 1, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	138     :   1863;  % MID TRIPLET: { 1, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	139     :   1863;  % MID TRIPLET: { 1, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	140     :   1863;  % MID TRIPLET: { 1, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	141     :   1863;  % MID TRIPLET: { 1, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	142     :   1863;  % MID TRIPLET: { 1, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	143     :   1864;  % MID TRIPLET: { 1, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	144     :   1c42;  % MID TRIPLET: { 1, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	145     :   1c42;  % MID TRIPLET: { 1, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	146     :   1c42;  % MID TRIPLET: { 1, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	147     :   1c42;  % MID TRIPLET: { 1, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	148     :   1c42;  % MID TRIPLET: { 1, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	149     :   1c42;  % MID TRIPLET: { 1, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	150     :   1c42;  % MID TRIPLET: { 1, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	151     :   1c42;  % MID TRIPLET: { 1, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	152     :   1c42;  % MID TRIPLET: { 1, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	153     :   2021;  % MID TRIPLET: { 1, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	154     :   2021;  % MID TRIPLET: { 1, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	155     :   2021;  % MID TRIPLET: { 1, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	156     :   2021;  % MID TRIPLET: { 1, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	157     :   2021;  % MID TRIPLET: { 1, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	158     :   2021;  % MID TRIPLET: { 1, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	159     :   2021;  % MID TRIPLET: { 1, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	160     :   2021;  % MID TRIPLET: { 1, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	161     :   2021;  % MID TRIPLET: { 1, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	162     :   00c9;  % MID TRIPLET: { 2, 0, 0 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 9   ->   0x02  0x01  0x00  0x00  % 
+	163     :   00c9;  % MID TRIPLET: { 2, 0, 1 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 9   ->   0x02  0x01  0x00  0x00  % 
+	164     :   00ca;  % MID TRIPLET: { 2, 0, 2 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 10  ->   0x02  0x01  0x00  0x00  0x11  % 
+	165     :   00cb;  % MID TRIPLET: { 2, 0, 3 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 11  ->   0x02  0x01  0x00  0x00  0x11  0x12  % 
+	166     :   00cc;  % MID TRIPLET: { 2, 0, 4 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 12  ->   0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	167     :   00cd;  % MID TRIPLET: { 2, 0, 5 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 13  ->   0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	168     :   00ce;  % MID TRIPLET: { 2, 0, 6 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 14  ->   0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	169     :   00cf;  % MID TRIPLET: { 2, 0, 7 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 15  ->   0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	170     :   00d0;  % MID TRIPLET: { 2, 0, 8 },   SUB-BRAID = 0 ,    START = 6 ,    STOP = 16  ->   0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	171     :   04c8;  % MID TRIPLET: { 2, 1, 0 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 8   ->   0x02  0x01  0x01  % 
+	172     :   04c8;  % MID TRIPLET: { 2, 1, 1 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 8   ->   0x02  0x01  0x01  % 
+	173     :   04c8;  % MID TRIPLET: { 2, 1, 2 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 8   ->   0x02  0x01  0x01  % 
+	174     :   04c9;  % MID TRIPLET: { 2, 1, 3 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 9   ->   0x02  0x01  0x01  0x12  % 
+	175     :   04ca;  % MID TRIPLET: { 2, 1, 4 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 10  ->   0x02  0x01  0x01  0x12  0x13  % 
+	176     :   04cb;  % MID TRIPLET: { 2, 1, 5 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 11  ->   0x02  0x01  0x01  0x12  0x13  0x14  % 
+	177     :   04cc;  % MID TRIPLET: { 2, 1, 6 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 12  ->   0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	178     :   04cd;  % MID TRIPLET: { 2, 1, 7 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 13  ->   0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	179     :   04ce;  % MID TRIPLET: { 2, 1, 8 },   SUB-BRAID = 1 ,    START = 6 ,    STOP = 14  ->   0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	180     :   08c7;  % MID TRIPLET: { 2, 2, 0 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 7   ->   0x02  0x02  % 
+	181     :   08c7;  % MID TRIPLET: { 2, 2, 1 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 7   ->   0x02  0x02  % 
+	182     :   08c7;  % MID TRIPLET: { 2, 2, 2 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 7   ->   0x02  0x02  % 
+	183     :   08c7;  % MID TRIPLET: { 2, 2, 3 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 7   ->   0x02  0x02  % 
+	184     :   08c8;  % MID TRIPLET: { 2, 2, 4 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 8   ->   0x02  0x02  0x13  % 
+	185     :   08c9;  % MID TRIPLET: { 2, 2, 5 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 9   ->   0x02  0x02  0x13  0x14  % 
+	186     :   08ca;  % MID TRIPLET: { 2, 2, 6 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 10  ->   0x02  0x02  0x13  0x14  0x15  % 
+	187     :   08cb;  % MID TRIPLET: { 2, 2, 7 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 11  ->   0x02  0x02  0x13  0x14  0x15  0x16  % 
+	188     :   08cc;  % MID TRIPLET: { 2, 2, 8 },   SUB-BRAID = 2 ,    START = 6 ,    STOP = 12  ->   0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	189     :   0cc6;  % MID TRIPLET: { 2, 3, 0 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	190     :   0cc6;  % MID TRIPLET: { 2, 3, 1 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	191     :   0cc6;  % MID TRIPLET: { 2, 3, 2 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	192     :   0cc6;  % MID TRIPLET: { 2, 3, 3 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	193     :   0cc6;  % MID TRIPLET: { 2, 3, 4 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 6   ->   0x03  % 
+	194     :   0cc7;  % MID TRIPLET: { 2, 3, 5 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 7   ->   0x03  0x14  % 
+	195     :   0cc8;  % MID TRIPLET: { 2, 3, 6 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 8   ->   0x03  0x14  0x15  % 
+	196     :   0cc9;  % MID TRIPLET: { 2, 3, 7 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 9   ->   0x03  0x14  0x15  0x16  % 
+	197     :   0cca;  % MID TRIPLET: { 2, 3, 8 },   SUB-BRAID = 3 ,    START = 6 ,    STOP = 10  ->   0x03  0x14  0x15  0x16  0x17  % 
+	198     :   10a5;  % MID TRIPLET: { 2, 4, 0 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	199     :   10a5;  % MID TRIPLET: { 2, 4, 1 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	200     :   10a5;  % MID TRIPLET: { 2, 4, 2 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	201     :   10a5;  % MID TRIPLET: { 2, 4, 3 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	202     :   10a5;  % MID TRIPLET: { 2, 4, 4 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	203     :   10a5;  % MID TRIPLET: { 2, 4, 5 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	204     :   10a6;  % MID TRIPLET: { 2, 4, 6 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 6   ->   0x04  0x15  % 
+	205     :   10a7;  % MID TRIPLET: { 2, 4, 7 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 7   ->   0x04  0x15  0x16  % 
+	206     :   10a8;  % MID TRIPLET: { 2, 4, 8 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 8   ->   0x04  0x15  0x16  0x17  % 
+	207     :   1484;  % MID TRIPLET: { 2, 5, 0 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	208     :   1484;  % MID TRIPLET: { 2, 5, 1 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	209     :   1484;  % MID TRIPLET: { 2, 5, 2 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	210     :   1484;  % MID TRIPLET: { 2, 5, 3 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	211     :   1484;  % MID TRIPLET: { 2, 5, 4 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	212     :   1484;  % MID TRIPLET: { 2, 5, 5 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	213     :   1484;  % MID TRIPLET: { 2, 5, 6 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	214     :   1485;  % MID TRIPLET: { 2, 5, 7 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 5   ->   0x05  0x16  % 
+	215     :   1486;  % MID TRIPLET: { 2, 5, 8 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 6   ->   0x05  0x16  0x17  % 
+	216     :   1863;  % MID TRIPLET: { 2, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	217     :   1863;  % MID TRIPLET: { 2, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	218     :   1863;  % MID TRIPLET: { 2, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	219     :   1863;  % MID TRIPLET: { 2, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	220     :   1863;  % MID TRIPLET: { 2, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	221     :   1863;  % MID TRIPLET: { 2, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	222     :   1863;  % MID TRIPLET: { 2, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	223     :   1863;  % MID TRIPLET: { 2, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	224     :   1864;  % MID TRIPLET: { 2, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	225     :   1c42;  % MID TRIPLET: { 2, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	226     :   1c42;  % MID TRIPLET: { 2, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	227     :   1c42;  % MID TRIPLET: { 2, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	228     :   1c42;  % MID TRIPLET: { 2, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	229     :   1c42;  % MID TRIPLET: { 2, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	230     :   1c42;  % MID TRIPLET: { 2, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	231     :   1c42;  % MID TRIPLET: { 2, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	232     :   1c42;  % MID TRIPLET: { 2, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	233     :   1c42;  % MID TRIPLET: { 2, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	234     :   2021;  % MID TRIPLET: { 2, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	235     :   2021;  % MID TRIPLET: { 2, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	236     :   2021;  % MID TRIPLET: { 2, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	237     :   2021;  % MID TRIPLET: { 2, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	238     :   2021;  % MID TRIPLET: { 2, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	239     :   2021;  % MID TRIPLET: { 2, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	240     :   2021;  % MID TRIPLET: { 2, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	241     :   2021;  % MID TRIPLET: { 2, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	242     :   2021;  % MID TRIPLET: { 2, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	243     :   00a9;  % MID TRIPLET: { 3, 0, 0 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 9   ->   0x03  0x02  0x01  0x00  0x00  % 
+	244     :   00a9;  % MID TRIPLET: { 3, 0, 1 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 9   ->   0x03  0x02  0x01  0x00  0x00  % 
+	245     :   00aa;  % MID TRIPLET: { 3, 0, 2 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 10  ->   0x03  0x02  0x01  0x00  0x00  0x11  % 
+	246     :   00ab;  % MID TRIPLET: { 3, 0, 3 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 11  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	247     :   00ac;  % MID TRIPLET: { 3, 0, 4 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 12  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	248     :   00ad;  % MID TRIPLET: { 3, 0, 5 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 13  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	249     :   00ae;  % MID TRIPLET: { 3, 0, 6 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 14  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	250     :   00af;  % MID TRIPLET: { 3, 0, 7 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 15  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	251     :   00b0;  % MID TRIPLET: { 3, 0, 8 },   SUB-BRAID = 0 ,    START = 5 ,    STOP = 16  ->   0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	252     :   04a8;  % MID TRIPLET: { 3, 1, 0 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 8   ->   0x03  0x02  0x01  0x01  % 
+	253     :   04a8;  % MID TRIPLET: { 3, 1, 1 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 8   ->   0x03  0x02  0x01  0x01  % 
+	254     :   04a8;  % MID TRIPLET: { 3, 1, 2 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 8   ->   0x03  0x02  0x01  0x01  % 
+	255     :   04a9;  % MID TRIPLET: { 3, 1, 3 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 9   ->   0x03  0x02  0x01  0x01  0x12  % 
+	256     :   04aa;  % MID TRIPLET: { 3, 1, 4 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 10  ->   0x03  0x02  0x01  0x01  0x12  0x13  % 
+	257     :   04ab;  % MID TRIPLET: { 3, 1, 5 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 11  ->   0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	258     :   04ac;  % MID TRIPLET: { 3, 1, 6 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 12  ->   0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	259     :   04ad;  % MID TRIPLET: { 3, 1, 7 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 13  ->   0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	260     :   04ae;  % MID TRIPLET: { 3, 1, 8 },   SUB-BRAID = 1 ,    START = 5 ,    STOP = 14  ->   0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	261     :   08a7;  % MID TRIPLET: { 3, 2, 0 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 7   ->   0x03  0x02  0x02  % 
+	262     :   08a7;  % MID TRIPLET: { 3, 2, 1 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 7   ->   0x03  0x02  0x02  % 
+	263     :   08a7;  % MID TRIPLET: { 3, 2, 2 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 7   ->   0x03  0x02  0x02  % 
+	264     :   08a7;  % MID TRIPLET: { 3, 2, 3 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 7   ->   0x03  0x02  0x02  % 
+	265     :   08a8;  % MID TRIPLET: { 3, 2, 4 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 8   ->   0x03  0x02  0x02  0x13  % 
+	266     :   08a9;  % MID TRIPLET: { 3, 2, 5 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 9   ->   0x03  0x02  0x02  0x13  0x14  % 
+	267     :   08aa;  % MID TRIPLET: { 3, 2, 6 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 10  ->   0x03  0x02  0x02  0x13  0x14  0x15  % 
+	268     :   08ab;  % MID TRIPLET: { 3, 2, 7 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 11  ->   0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	269     :   08ac;  % MID TRIPLET: { 3, 2, 8 },   SUB-BRAID = 2 ,    START = 5 ,    STOP = 12  ->   0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	270     :   0ca6;  % MID TRIPLET: { 3, 3, 0 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 6   ->   0x03  0x03  % 
+	271     :   0ca6;  % MID TRIPLET: { 3, 3, 1 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 6   ->   0x03  0x03  % 
+	272     :   0ca6;  % MID TRIPLET: { 3, 3, 2 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 6   ->   0x03  0x03  % 
+	273     :   0ca6;  % MID TRIPLET: { 3, 3, 3 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 6   ->   0x03  0x03  % 
+	274     :   0ca6;  % MID TRIPLET: { 3, 3, 4 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 6   ->   0x03  0x03  % 
+	275     :   0ca7;  % MID TRIPLET: { 3, 3, 5 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 7   ->   0x03  0x03  0x14  % 
+	276     :   0ca8;  % MID TRIPLET: { 3, 3, 6 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 8   ->   0x03  0x03  0x14  0x15  % 
+	277     :   0ca9;  % MID TRIPLET: { 3, 3, 7 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 9   ->   0x03  0x03  0x14  0x15  0x16  % 
+	278     :   0caa;  % MID TRIPLET: { 3, 3, 8 },   SUB-BRAID = 3 ,    START = 5 ,    STOP = 10  ->   0x03  0x03  0x14  0x15  0x16  0x17  % 
+	279     :   10a5;  % MID TRIPLET: { 3, 4, 0 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	280     :   10a5;  % MID TRIPLET: { 3, 4, 1 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	281     :   10a5;  % MID TRIPLET: { 3, 4, 2 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	282     :   10a5;  % MID TRIPLET: { 3, 4, 3 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	283     :   10a5;  % MID TRIPLET: { 3, 4, 4 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	284     :   10a5;  % MID TRIPLET: { 3, 4, 5 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 5   ->   0x04  % 
+	285     :   10a6;  % MID TRIPLET: { 3, 4, 6 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 6   ->   0x04  0x15  % 
+	286     :   10a7;  % MID TRIPLET: { 3, 4, 7 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 7   ->   0x04  0x15  0x16  % 
+	287     :   10a8;  % MID TRIPLET: { 3, 4, 8 },   SUB-BRAID = 4 ,    START = 5 ,    STOP = 8   ->   0x04  0x15  0x16  0x17  % 
+	288     :   1484;  % MID TRIPLET: { 3, 5, 0 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	289     :   1484;  % MID TRIPLET: { 3, 5, 1 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	290     :   1484;  % MID TRIPLET: { 3, 5, 2 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	291     :   1484;  % MID TRIPLET: { 3, 5, 3 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	292     :   1484;  % MID TRIPLET: { 3, 5, 4 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	293     :   1484;  % MID TRIPLET: { 3, 5, 5 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	294     :   1484;  % MID TRIPLET: { 3, 5, 6 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	295     :   1485;  % MID TRIPLET: { 3, 5, 7 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 5   ->   0x05  0x16  % 
+	296     :   1486;  % MID TRIPLET: { 3, 5, 8 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 6   ->   0x05  0x16  0x17  % 
+	297     :   1863;  % MID TRIPLET: { 3, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	298     :   1863;  % MID TRIPLET: { 3, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	299     :   1863;  % MID TRIPLET: { 3, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	300     :   1863;  % MID TRIPLET: { 3, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	301     :   1863;  % MID TRIPLET: { 3, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	302     :   1863;  % MID TRIPLET: { 3, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	303     :   1863;  % MID TRIPLET: { 3, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	304     :   1863;  % MID TRIPLET: { 3, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	305     :   1864;  % MID TRIPLET: { 3, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	306     :   1c42;  % MID TRIPLET: { 3, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	307     :   1c42;  % MID TRIPLET: { 3, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	308     :   1c42;  % MID TRIPLET: { 3, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	309     :   1c42;  % MID TRIPLET: { 3, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	310     :   1c42;  % MID TRIPLET: { 3, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	311     :   1c42;  % MID TRIPLET: { 3, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	312     :   1c42;  % MID TRIPLET: { 3, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	313     :   1c42;  % MID TRIPLET: { 3, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	314     :   1c42;  % MID TRIPLET: { 3, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	315     :   2021;  % MID TRIPLET: { 3, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	316     :   2021;  % MID TRIPLET: { 3, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	317     :   2021;  % MID TRIPLET: { 3, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	318     :   2021;  % MID TRIPLET: { 3, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	319     :   2021;  % MID TRIPLET: { 3, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	320     :   2021;  % MID TRIPLET: { 3, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	321     :   2021;  % MID TRIPLET: { 3, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	322     :   2021;  % MID TRIPLET: { 3, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	323     :   2021;  % MID TRIPLET: { 3, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	324     :   0089;  % MID TRIPLET: { 4, 0, 0 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 9   ->   0x04  0x03  0x02  0x01  0x00  0x00  % 
+	325     :   0089;  % MID TRIPLET: { 4, 0, 1 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 9   ->   0x04  0x03  0x02  0x01  0x00  0x00  % 
+	326     :   008a;  % MID TRIPLET: { 4, 0, 2 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 10  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  % 
+	327     :   008b;  % MID TRIPLET: { 4, 0, 3 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 11  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	328     :   008c;  % MID TRIPLET: { 4, 0, 4 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 12  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	329     :   008d;  % MID TRIPLET: { 4, 0, 5 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 13  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	330     :   008e;  % MID TRIPLET: { 4, 0, 6 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 14  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	331     :   008f;  % MID TRIPLET: { 4, 0, 7 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 15  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	332     :   0090;  % MID TRIPLET: { 4, 0, 8 },   SUB-BRAID = 0 ,    START = 4 ,    STOP = 16  ->   0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	333     :   0488;  % MID TRIPLET: { 4, 1, 0 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 8   ->   0x04  0x03  0x02  0x01  0x01  % 
+	334     :   0488;  % MID TRIPLET: { 4, 1, 1 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 8   ->   0x04  0x03  0x02  0x01  0x01  % 
+	335     :   0488;  % MID TRIPLET: { 4, 1, 2 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 8   ->   0x04  0x03  0x02  0x01  0x01  % 
+	336     :   0489;  % MID TRIPLET: { 4, 1, 3 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 9   ->   0x04  0x03  0x02  0x01  0x01  0x12  % 
+	337     :   048a;  % MID TRIPLET: { 4, 1, 4 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 10  ->   0x04  0x03  0x02  0x01  0x01  0x12  0x13  % 
+	338     :   048b;  % MID TRIPLET: { 4, 1, 5 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 11  ->   0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	339     :   048c;  % MID TRIPLET: { 4, 1, 6 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 12  ->   0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	340     :   048d;  % MID TRIPLET: { 4, 1, 7 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 13  ->   0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	341     :   048e;  % MID TRIPLET: { 4, 1, 8 },   SUB-BRAID = 1 ,    START = 4 ,    STOP = 14  ->   0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	342     :   0887;  % MID TRIPLET: { 4, 2, 0 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 7   ->   0x04  0x03  0x02  0x02  % 
+	343     :   0887;  % MID TRIPLET: { 4, 2, 1 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 7   ->   0x04  0x03  0x02  0x02  % 
+	344     :   0887;  % MID TRIPLET: { 4, 2, 2 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 7   ->   0x04  0x03  0x02  0x02  % 
+	345     :   0887;  % MID TRIPLET: { 4, 2, 3 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 7   ->   0x04  0x03  0x02  0x02  % 
+	346     :   0888;  % MID TRIPLET: { 4, 2, 4 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 8   ->   0x04  0x03  0x02  0x02  0x13  % 
+	347     :   0889;  % MID TRIPLET: { 4, 2, 5 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 9   ->   0x04  0x03  0x02  0x02  0x13  0x14  % 
+	348     :   088a;  % MID TRIPLET: { 4, 2, 6 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 10  ->   0x04  0x03  0x02  0x02  0x13  0x14  0x15  % 
+	349     :   088b;  % MID TRIPLET: { 4, 2, 7 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 11  ->   0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	350     :   088c;  % MID TRIPLET: { 4, 2, 8 },   SUB-BRAID = 2 ,    START = 4 ,    STOP = 12  ->   0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	351     :   0c86;  % MID TRIPLET: { 4, 3, 0 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 6   ->   0x04  0x03  0x03  % 
+	352     :   0c86;  % MID TRIPLET: { 4, 3, 1 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 6   ->   0x04  0x03  0x03  % 
+	353     :   0c86;  % MID TRIPLET: { 4, 3, 2 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 6   ->   0x04  0x03  0x03  % 
+	354     :   0c86;  % MID TRIPLET: { 4, 3, 3 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 6   ->   0x04  0x03  0x03  % 
+	355     :   0c86;  % MID TRIPLET: { 4, 3, 4 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 6   ->   0x04  0x03  0x03  % 
+	356     :   0c87;  % MID TRIPLET: { 4, 3, 5 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 7   ->   0x04  0x03  0x03  0x14  % 
+	357     :   0c88;  % MID TRIPLET: { 4, 3, 6 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 8   ->   0x04  0x03  0x03  0x14  0x15  % 
+	358     :   0c89;  % MID TRIPLET: { 4, 3, 7 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 9   ->   0x04  0x03  0x03  0x14  0x15  0x16  % 
+	359     :   0c8a;  % MID TRIPLET: { 4, 3, 8 },   SUB-BRAID = 3 ,    START = 4 ,    STOP = 10  ->   0x04  0x03  0x03  0x14  0x15  0x16  0x17  % 
+	360     :   1085;  % MID TRIPLET: { 4, 4, 0 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	361     :   1085;  % MID TRIPLET: { 4, 4, 1 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	362     :   1085;  % MID TRIPLET: { 4, 4, 2 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	363     :   1085;  % MID TRIPLET: { 4, 4, 3 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	364     :   1085;  % MID TRIPLET: { 4, 4, 4 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	365     :   1085;  % MID TRIPLET: { 4, 4, 5 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 5   ->   0x04  0x04  % 
+	366     :   1086;  % MID TRIPLET: { 4, 4, 6 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 6   ->   0x04  0x04  0x15  % 
+	367     :   1087;  % MID TRIPLET: { 4, 4, 7 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 7   ->   0x04  0x04  0x15  0x16  % 
+	368     :   1088;  % MID TRIPLET: { 4, 4, 8 },   SUB-BRAID = 4 ,    START = 4 ,    STOP = 8   ->   0x04  0x04  0x15  0x16  0x17  % 
+	369     :   1484;  % MID TRIPLET: { 4, 5, 0 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	370     :   1484;  % MID TRIPLET: { 4, 5, 1 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	371     :   1484;  % MID TRIPLET: { 4, 5, 2 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	372     :   1484;  % MID TRIPLET: { 4, 5, 3 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	373     :   1484;  % MID TRIPLET: { 4, 5, 4 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	374     :   1484;  % MID TRIPLET: { 4, 5, 5 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	375     :   1484;  % MID TRIPLET: { 4, 5, 6 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 4   ->   0x05  % 
+	376     :   1485;  % MID TRIPLET: { 4, 5, 7 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 5   ->   0x05  0x16  % 
+	377     :   1486;  % MID TRIPLET: { 4, 5, 8 },   SUB-BRAID = 5 ,    START = 4 ,    STOP = 6   ->   0x05  0x16  0x17  % 
+	378     :   1863;  % MID TRIPLET: { 4, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	379     :   1863;  % MID TRIPLET: { 4, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	380     :   1863;  % MID TRIPLET: { 4, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	381     :   1863;  % MID TRIPLET: { 4, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	382     :   1863;  % MID TRIPLET: { 4, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	383     :   1863;  % MID TRIPLET: { 4, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	384     :   1863;  % MID TRIPLET: { 4, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	385     :   1863;  % MID TRIPLET: { 4, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	386     :   1864;  % MID TRIPLET: { 4, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	387     :   1c42;  % MID TRIPLET: { 4, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	388     :   1c42;  % MID TRIPLET: { 4, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	389     :   1c42;  % MID TRIPLET: { 4, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	390     :   1c42;  % MID TRIPLET: { 4, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	391     :   1c42;  % MID TRIPLET: { 4, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	392     :   1c42;  % MID TRIPLET: { 4, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	393     :   1c42;  % MID TRIPLET: { 4, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	394     :   1c42;  % MID TRIPLET: { 4, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	395     :   1c42;  % MID TRIPLET: { 4, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	396     :   2021;  % MID TRIPLET: { 4, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	397     :   2021;  % MID TRIPLET: { 4, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	398     :   2021;  % MID TRIPLET: { 4, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	399     :   2021;  % MID TRIPLET: { 4, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	400     :   2021;  % MID TRIPLET: { 4, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	401     :   2021;  % MID TRIPLET: { 4, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	402     :   2021;  % MID TRIPLET: { 4, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	403     :   2021;  % MID TRIPLET: { 4, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	404     :   2021;  % MID TRIPLET: { 4, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	405     :   0069;  % MID TRIPLET: { 5, 0, 0 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 9   ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	406     :   0069;  % MID TRIPLET: { 5, 0, 1 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 9   ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	407     :   006a;  % MID TRIPLET: { 5, 0, 2 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 10  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  % 
+	408     :   006b;  % MID TRIPLET: { 5, 0, 3 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 11  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	409     :   006c;  % MID TRIPLET: { 5, 0, 4 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 12  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	410     :   006d;  % MID TRIPLET: { 5, 0, 5 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 13  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	411     :   006e;  % MID TRIPLET: { 5, 0, 6 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 14  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	412     :   006f;  % MID TRIPLET: { 5, 0, 7 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 15  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	413     :   0070;  % MID TRIPLET: { 5, 0, 8 },   SUB-BRAID = 0 ,    START = 3 ,    STOP = 16  ->   0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	414     :   0468;  % MID TRIPLET: { 5, 1, 0 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x03  0x02  0x01  0x01  % 
+	415     :   0468;  % MID TRIPLET: { 5, 1, 1 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x03  0x02  0x01  0x01  % 
+	416     :   0468;  % MID TRIPLET: { 5, 1, 2 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x03  0x02  0x01  0x01  % 
+	417     :   0469;  % MID TRIPLET: { 5, 1, 3 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 9   ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  % 
+	418     :   046a;  % MID TRIPLET: { 5, 1, 4 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 10  ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  % 
+	419     :   046b;  % MID TRIPLET: { 5, 1, 5 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 11  ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	420     :   046c;  % MID TRIPLET: { 5, 1, 6 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 12  ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	421     :   046d;  % MID TRIPLET: { 5, 1, 7 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 13  ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	422     :   046e;  % MID TRIPLET: { 5, 1, 8 },   SUB-BRAID = 1 ,    START = 3 ,    STOP = 14  ->   0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	423     :   0867;  % MID TRIPLET: { 5, 2, 0 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x03  0x02  0x02  % 
+	424     :   0867;  % MID TRIPLET: { 5, 2, 1 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x03  0x02  0x02  % 
+	425     :   0867;  % MID TRIPLET: { 5, 2, 2 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x03  0x02  0x02  % 
+	426     :   0867;  % MID TRIPLET: { 5, 2, 3 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x03  0x02  0x02  % 
+	427     :   0868;  % MID TRIPLET: { 5, 2, 4 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x03  0x02  0x02  0x13  % 
+	428     :   0869;  % MID TRIPLET: { 5, 2, 5 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 9   ->   0x05  0x04  0x03  0x02  0x02  0x13  0x14  % 
+	429     :   086a;  % MID TRIPLET: { 5, 2, 6 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 10  ->   0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  % 
+	430     :   086b;  % MID TRIPLET: { 5, 2, 7 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 11  ->   0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	431     :   086c;  % MID TRIPLET: { 5, 2, 8 },   SUB-BRAID = 2 ,    START = 3 ,    STOP = 12  ->   0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	432     :   0c66;  % MID TRIPLET: { 5, 3, 0 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x03  0x03  % 
+	433     :   0c66;  % MID TRIPLET: { 5, 3, 1 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x03  0x03  % 
+	434     :   0c66;  % MID TRIPLET: { 5, 3, 2 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x03  0x03  % 
+	435     :   0c66;  % MID TRIPLET: { 5, 3, 3 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x03  0x03  % 
+	436     :   0c66;  % MID TRIPLET: { 5, 3, 4 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x03  0x03  % 
+	437     :   0c67;  % MID TRIPLET: { 5, 3, 5 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x03  0x03  0x14  % 
+	438     :   0c68;  % MID TRIPLET: { 5, 3, 6 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x03  0x03  0x14  0x15  % 
+	439     :   0c69;  % MID TRIPLET: { 5, 3, 7 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 9   ->   0x05  0x04  0x03  0x03  0x14  0x15  0x16  % 
+	440     :   0c6a;  % MID TRIPLET: { 5, 3, 8 },   SUB-BRAID = 3 ,    START = 3 ,    STOP = 10  ->   0x05  0x04  0x03  0x03  0x14  0x15  0x16  0x17  % 
+	441     :   1065;  % MID TRIPLET: { 5, 4, 0 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	442     :   1065;  % MID TRIPLET: { 5, 4, 1 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	443     :   1065;  % MID TRIPLET: { 5, 4, 2 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	444     :   1065;  % MID TRIPLET: { 5, 4, 3 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	445     :   1065;  % MID TRIPLET: { 5, 4, 4 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	446     :   1065;  % MID TRIPLET: { 5, 4, 5 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 5   ->   0x05  0x04  0x04  % 
+	447     :   1066;  % MID TRIPLET: { 5, 4, 6 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 6   ->   0x05  0x04  0x04  0x15  % 
+	448     :   1067;  % MID TRIPLET: { 5, 4, 7 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 7   ->   0x05  0x04  0x04  0x15  0x16  % 
+	449     :   1068;  % MID TRIPLET: { 5, 4, 8 },   SUB-BRAID = 4 ,    START = 3 ,    STOP = 8   ->   0x05  0x04  0x04  0x15  0x16  0x17  % 
+	450     :   1464;  % MID TRIPLET: { 5, 5, 0 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	451     :   1464;  % MID TRIPLET: { 5, 5, 1 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	452     :   1464;  % MID TRIPLET: { 5, 5, 2 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	453     :   1464;  % MID TRIPLET: { 5, 5, 3 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	454     :   1464;  % MID TRIPLET: { 5, 5, 4 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	455     :   1464;  % MID TRIPLET: { 5, 5, 5 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	456     :   1464;  % MID TRIPLET: { 5, 5, 6 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 4   ->   0x05  0x05  % 
+	457     :   1465;  % MID TRIPLET: { 5, 5, 7 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 5   ->   0x05  0x05  0x16  % 
+	458     :   1466;  % MID TRIPLET: { 5, 5, 8 },   SUB-BRAID = 5 ,    START = 3 ,    STOP = 6   ->   0x05  0x05  0x16  0x17  % 
+	459     :   1863;  % MID TRIPLET: { 5, 6, 0 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	460     :   1863;  % MID TRIPLET: { 5, 6, 1 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	461     :   1863;  % MID TRIPLET: { 5, 6, 2 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	462     :   1863;  % MID TRIPLET: { 5, 6, 3 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	463     :   1863;  % MID TRIPLET: { 5, 6, 4 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	464     :   1863;  % MID TRIPLET: { 5, 6, 5 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	465     :   1863;  % MID TRIPLET: { 5, 6, 6 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	466     :   1863;  % MID TRIPLET: { 5, 6, 7 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 3   ->   0x06  % 
+	467     :   1864;  % MID TRIPLET: { 5, 6, 8 },   SUB-BRAID = 6 ,    START = 3 ,    STOP = 4   ->   0x06  0x17  % 
+	468     :   1c42;  % MID TRIPLET: { 5, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	469     :   1c42;  % MID TRIPLET: { 5, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	470     :   1c42;  % MID TRIPLET: { 5, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	471     :   1c42;  % MID TRIPLET: { 5, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	472     :   1c42;  % MID TRIPLET: { 5, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	473     :   1c42;  % MID TRIPLET: { 5, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	474     :   1c42;  % MID TRIPLET: { 5, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	475     :   1c42;  % MID TRIPLET: { 5, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	476     :   1c42;  % MID TRIPLET: { 5, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	477     :   2021;  % MID TRIPLET: { 5, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	478     :   2021;  % MID TRIPLET: { 5, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	479     :   2021;  % MID TRIPLET: { 5, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	480     :   2021;  % MID TRIPLET: { 5, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	481     :   2021;  % MID TRIPLET: { 5, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	482     :   2021;  % MID TRIPLET: { 5, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	483     :   2021;  % MID TRIPLET: { 5, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	484     :   2021;  % MID TRIPLET: { 5, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	485     :   2021;  % MID TRIPLET: { 5, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	486     :   0049;  % MID TRIPLET: { 6, 0, 0 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 9   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	487     :   0049;  % MID TRIPLET: { 6, 0, 1 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 9   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	488     :   004a;  % MID TRIPLET: { 6, 0, 2 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 10  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  % 
+	489     :   004b;  % MID TRIPLET: { 6, 0, 3 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 11  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	490     :   004c;  % MID TRIPLET: { 6, 0, 4 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 12  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	491     :   004d;  % MID TRIPLET: { 6, 0, 5 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 13  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	492     :   004e;  % MID TRIPLET: { 6, 0, 6 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 14  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	493     :   004f;  % MID TRIPLET: { 6, 0, 7 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 15  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	494     :   0050;  % MID TRIPLET: { 6, 0, 8 },   SUB-BRAID = 0 ,    START = 2 ,    STOP = 16  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	495     :   0448;  % MID TRIPLET: { 6, 1, 0 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	496     :   0448;  % MID TRIPLET: { 6, 1, 1 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	497     :   0448;  % MID TRIPLET: { 6, 1, 2 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	498     :   0449;  % MID TRIPLET: { 6, 1, 3 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 9   ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  % 
+	499     :   044a;  % MID TRIPLET: { 6, 1, 4 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 10  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  % 
+	500     :   044b;  % MID TRIPLET: { 6, 1, 5 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 11  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	501     :   044c;  % MID TRIPLET: { 6, 1, 6 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 12  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	502     :   044d;  % MID TRIPLET: { 6, 1, 7 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 13  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	503     :   044e;  % MID TRIPLET: { 6, 1, 8 },   SUB-BRAID = 1 ,    START = 2 ,    STOP = 14  ->   0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	504     :   0847;  % MID TRIPLET: { 6, 2, 0 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x03  0x02  0x02  % 
+	505     :   0847;  % MID TRIPLET: { 6, 2, 1 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x03  0x02  0x02  % 
+	506     :   0847;  % MID TRIPLET: { 6, 2, 2 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x03  0x02  0x02  % 
+	507     :   0847;  % MID TRIPLET: { 6, 2, 3 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x03  0x02  0x02  % 
+	508     :   0848;  % MID TRIPLET: { 6, 2, 4 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x03  0x02  0x02  0x13  % 
+	509     :   0849;  % MID TRIPLET: { 6, 2, 5 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 9   ->   0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  % 
+	510     :   084a;  % MID TRIPLET: { 6, 2, 6 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 10  ->   0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  % 
+	511     :   084b;  % MID TRIPLET: { 6, 2, 7 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 11  ->   0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	512     :   084c;  % MID TRIPLET: { 6, 2, 8 },   SUB-BRAID = 2 ,    START = 2 ,    STOP = 12  ->   0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	513     :   0c46;  % MID TRIPLET: { 6, 3, 0 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x03  0x03  % 
+	514     :   0c46;  % MID TRIPLET: { 6, 3, 1 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x03  0x03  % 
+	515     :   0c46;  % MID TRIPLET: { 6, 3, 2 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x03  0x03  % 
+	516     :   0c46;  % MID TRIPLET: { 6, 3, 3 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x03  0x03  % 
+	517     :   0c46;  % MID TRIPLET: { 6, 3, 4 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x03  0x03  % 
+	518     :   0c47;  % MID TRIPLET: { 6, 3, 5 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x03  0x03  0x14  % 
+	519     :   0c48;  % MID TRIPLET: { 6, 3, 6 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x03  0x03  0x14  0x15  % 
+	520     :   0c49;  % MID TRIPLET: { 6, 3, 7 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 9   ->   0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  % 
+	521     :   0c4a;  % MID TRIPLET: { 6, 3, 8 },   SUB-BRAID = 3 ,    START = 2 ,    STOP = 10  ->   0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  0x17  % 
+	522     :   1045;  % MID TRIPLET: { 6, 4, 0 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	523     :   1045;  % MID TRIPLET: { 6, 4, 1 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	524     :   1045;  % MID TRIPLET: { 6, 4, 2 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	525     :   1045;  % MID TRIPLET: { 6, 4, 3 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	526     :   1045;  % MID TRIPLET: { 6, 4, 4 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	527     :   1045;  % MID TRIPLET: { 6, 4, 5 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x04  0x04  % 
+	528     :   1046;  % MID TRIPLET: { 6, 4, 6 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x04  0x04  0x15  % 
+	529     :   1047;  % MID TRIPLET: { 6, 4, 7 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 7   ->   0x06  0x05  0x04  0x04  0x15  0x16  % 
+	530     :   1048;  % MID TRIPLET: { 6, 4, 8 },   SUB-BRAID = 4 ,    START = 2 ,    STOP = 8   ->   0x06  0x05  0x04  0x04  0x15  0x16  0x17  % 
+	531     :   1444;  % MID TRIPLET: { 6, 5, 0 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	532     :   1444;  % MID TRIPLET: { 6, 5, 1 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	533     :   1444;  % MID TRIPLET: { 6, 5, 2 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	534     :   1444;  % MID TRIPLET: { 6, 5, 3 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	535     :   1444;  % MID TRIPLET: { 6, 5, 4 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	536     :   1444;  % MID TRIPLET: { 6, 5, 5 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	537     :   1444;  % MID TRIPLET: { 6, 5, 6 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 4   ->   0x06  0x05  0x05  % 
+	538     :   1445;  % MID TRIPLET: { 6, 5, 7 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 5   ->   0x06  0x05  0x05  0x16  % 
+	539     :   1446;  % MID TRIPLET: { 6, 5, 8 },   SUB-BRAID = 5 ,    START = 2 ,    STOP = 6   ->   0x06  0x05  0x05  0x16  0x17  % 
+	540     :   1843;  % MID TRIPLET: { 6, 6, 0 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	541     :   1843;  % MID TRIPLET: { 6, 6, 1 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	542     :   1843;  % MID TRIPLET: { 6, 6, 2 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	543     :   1843;  % MID TRIPLET: { 6, 6, 3 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	544     :   1843;  % MID TRIPLET: { 6, 6, 4 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	545     :   1843;  % MID TRIPLET: { 6, 6, 5 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	546     :   1843;  % MID TRIPLET: { 6, 6, 6 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	547     :   1843;  % MID TRIPLET: { 6, 6, 7 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 3   ->   0x06  0x06  % 
+	548     :   1844;  % MID TRIPLET: { 6, 6, 8 },   SUB-BRAID = 6 ,    START = 2 ,    STOP = 4   ->   0x06  0x06  0x17  % 
+	549     :   1c42;  % MID TRIPLET: { 6, 7, 0 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	550     :   1c42;  % MID TRIPLET: { 6, 7, 1 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	551     :   1c42;  % MID TRIPLET: { 6, 7, 2 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	552     :   1c42;  % MID TRIPLET: { 6, 7, 3 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	553     :   1c42;  % MID TRIPLET: { 6, 7, 4 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	554     :   1c42;  % MID TRIPLET: { 6, 7, 5 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	555     :   1c42;  % MID TRIPLET: { 6, 7, 6 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	556     :   1c42;  % MID TRIPLET: { 6, 7, 7 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	557     :   1c42;  % MID TRIPLET: { 6, 7, 8 },   SUB-BRAID = 7 ,    START = 2 ,    STOP = 2   ->   0x07  % 
+	558     :   2021;  % MID TRIPLET: { 6, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	559     :   2021;  % MID TRIPLET: { 6, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	560     :   2021;  % MID TRIPLET: { 6, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	561     :   2021;  % MID TRIPLET: { 6, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	562     :   2021;  % MID TRIPLET: { 6, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	563     :   2021;  % MID TRIPLET: { 6, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	564     :   2021;  % MID TRIPLET: { 6, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	565     :   2021;  % MID TRIPLET: { 6, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	566     :   2021;  % MID TRIPLET: { 6, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	567     :   0029;  % MID TRIPLET: { 7, 0, 0 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 9   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	568     :   0029;  % MID TRIPLET: { 7, 0, 1 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 9   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	569     :   002a;  % MID TRIPLET: { 7, 0, 2 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 10  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  % 
+	570     :   002b;  % MID TRIPLET: { 7, 0, 3 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 11  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	571     :   002c;  % MID TRIPLET: { 7, 0, 4 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 12  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	572     :   002d;  % MID TRIPLET: { 7, 0, 5 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 13  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	573     :   002e;  % MID TRIPLET: { 7, 0, 6 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 14  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	574     :   002f;  % MID TRIPLET: { 7, 0, 7 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 15  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	575     :   0030;  % MID TRIPLET: { 7, 0, 8 },   SUB-BRAID = 0 ,    START = 1 ,    STOP = 16  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	576     :   0428;  % MID TRIPLET: { 7, 1, 0 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	577     :   0428;  % MID TRIPLET: { 7, 1, 1 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	578     :   0428;  % MID TRIPLET: { 7, 1, 2 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	579     :   0429;  % MID TRIPLET: { 7, 1, 3 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 9   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  % 
+	580     :   042a;  % MID TRIPLET: { 7, 1, 4 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 10  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  % 
+	581     :   042b;  % MID TRIPLET: { 7, 1, 5 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 11  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	582     :   042c;  % MID TRIPLET: { 7, 1, 6 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 12  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	583     :   042d;  % MID TRIPLET: { 7, 1, 7 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 13  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	584     :   042e;  % MID TRIPLET: { 7, 1, 8 },   SUB-BRAID = 1 ,    START = 1 ,    STOP = 14  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	585     :   0827;  % MID TRIPLET: { 7, 2, 0 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	586     :   0827;  % MID TRIPLET: { 7, 2, 1 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	587     :   0827;  % MID TRIPLET: { 7, 2, 2 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	588     :   0827;  % MID TRIPLET: { 7, 2, 3 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	589     :   0828;  % MID TRIPLET: { 7, 2, 4 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  % 
+	590     :   0829;  % MID TRIPLET: { 7, 2, 5 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 9   ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  % 
+	591     :   082a;  % MID TRIPLET: { 7, 2, 6 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 10  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  % 
+	592     :   082b;  % MID TRIPLET: { 7, 2, 7 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 11  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	593     :   082c;  % MID TRIPLET: { 7, 2, 8 },   SUB-BRAID = 2 ,    START = 1 ,    STOP = 12  ->   0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	594     :   0c26;  % MID TRIPLET: { 7, 3, 0 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x03  0x03  % 
+	595     :   0c26;  % MID TRIPLET: { 7, 3, 1 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x03  0x03  % 
+	596     :   0c26;  % MID TRIPLET: { 7, 3, 2 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x03  0x03  % 
+	597     :   0c26;  % MID TRIPLET: { 7, 3, 3 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x03  0x03  % 
+	598     :   0c26;  % MID TRIPLET: { 7, 3, 4 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x03  0x03  % 
+	599     :   0c27;  % MID TRIPLET: { 7, 3, 5 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x03  0x03  0x14  % 
+	600     :   0c28;  % MID TRIPLET: { 7, 3, 6 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  % 
+	601     :   0c29;  % MID TRIPLET: { 7, 3, 7 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 9   ->   0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  % 
+	602     :   0c2a;  % MID TRIPLET: { 7, 3, 8 },   SUB-BRAID = 3 ,    START = 1 ,    STOP = 10  ->   0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  0x17  % 
+	603     :   1025;  % MID TRIPLET: { 7, 4, 0 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	604     :   1025;  % MID TRIPLET: { 7, 4, 1 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	605     :   1025;  % MID TRIPLET: { 7, 4, 2 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	606     :   1025;  % MID TRIPLET: { 7, 4, 3 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	607     :   1025;  % MID TRIPLET: { 7, 4, 4 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	608     :   1025;  % MID TRIPLET: { 7, 4, 5 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x04  0x04  % 
+	609     :   1026;  % MID TRIPLET: { 7, 4, 6 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x04  0x04  0x15  % 
+	610     :   1027;  % MID TRIPLET: { 7, 4, 7 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 7   ->   0x07  0x06  0x05  0x04  0x04  0x15  0x16  % 
+	611     :   1028;  % MID TRIPLET: { 7, 4, 8 },   SUB-BRAID = 4 ,    START = 1 ,    STOP = 8   ->   0x07  0x06  0x05  0x04  0x04  0x15  0x16  0x17  % 
+	612     :   1424;  % MID TRIPLET: { 7, 5, 0 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	613     :   1424;  % MID TRIPLET: { 7, 5, 1 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	614     :   1424;  % MID TRIPLET: { 7, 5, 2 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	615     :   1424;  % MID TRIPLET: { 7, 5, 3 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	616     :   1424;  % MID TRIPLET: { 7, 5, 4 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	617     :   1424;  % MID TRIPLET: { 7, 5, 5 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	618     :   1424;  % MID TRIPLET: { 7, 5, 6 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x05  0x05  % 
+	619     :   1425;  % MID TRIPLET: { 7, 5, 7 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 5   ->   0x07  0x06  0x05  0x05  0x16  % 
+	620     :   1426;  % MID TRIPLET: { 7, 5, 8 },   SUB-BRAID = 5 ,    START = 1 ,    STOP = 6   ->   0x07  0x06  0x05  0x05  0x16  0x17  % 
+	621     :   1823;  % MID TRIPLET: { 7, 6, 0 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	622     :   1823;  % MID TRIPLET: { 7, 6, 1 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	623     :   1823;  % MID TRIPLET: { 7, 6, 2 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	624     :   1823;  % MID TRIPLET: { 7, 6, 3 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	625     :   1823;  % MID TRIPLET: { 7, 6, 4 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	626     :   1823;  % MID TRIPLET: { 7, 6, 5 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	627     :   1823;  % MID TRIPLET: { 7, 6, 6 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	628     :   1823;  % MID TRIPLET: { 7, 6, 7 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 3   ->   0x07  0x06  0x06  % 
+	629     :   1824;  % MID TRIPLET: { 7, 6, 8 },   SUB-BRAID = 6 ,    START = 1 ,    STOP = 4   ->   0x07  0x06  0x06  0x17  % 
+	630     :   1c22;  % MID TRIPLET: { 7, 7, 0 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	631     :   1c22;  % MID TRIPLET: { 7, 7, 1 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	632     :   1c22;  % MID TRIPLET: { 7, 7, 2 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	633     :   1c22;  % MID TRIPLET: { 7, 7, 3 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	634     :   1c22;  % MID TRIPLET: { 7, 7, 4 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	635     :   1c22;  % MID TRIPLET: { 7, 7, 5 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	636     :   1c22;  % MID TRIPLET: { 7, 7, 6 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	637     :   1c22;  % MID TRIPLET: { 7, 7, 7 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	638     :   1c22;  % MID TRIPLET: { 7, 7, 8 },   SUB-BRAID = 7 ,    START = 1 ,    STOP = 2   ->   0x07  0x07  % 
+	639     :   2021;  % MID TRIPLET: { 7, 8, 0 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	640     :   2021;  % MID TRIPLET: { 7, 8, 1 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	641     :   2021;  % MID TRIPLET: { 7, 8, 2 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	642     :   2021;  % MID TRIPLET: { 7, 8, 3 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	643     :   2021;  % MID TRIPLET: { 7, 8, 4 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	644     :   2021;  % MID TRIPLET: { 7, 8, 5 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	645     :   2021;  % MID TRIPLET: { 7, 8, 6 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	646     :   2021;  % MID TRIPLET: { 7, 8, 7 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	647     :   2021;  % MID TRIPLET: { 7, 8, 8 },   SUB-BRAID = 8 ,    START = 1 ,    STOP = 1   ->   0x08  % 
+	648     :   0009;  % MID TRIPLET: { 8, 0, 0 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 9   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	649     :   0009;  % MID TRIPLET: { 8, 0, 1 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 9   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  % 
+	650     :   000a;  % MID TRIPLET: { 8, 0, 2 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 10  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  % 
+	651     :   000b;  % MID TRIPLET: { 8, 0, 3 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 11  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  % 
+	652     :   000c;  % MID TRIPLET: { 8, 0, 4 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 12  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  % 
+	653     :   000d;  % MID TRIPLET: { 8, 0, 5 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 13  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  % 
+	654     :   000e;  % MID TRIPLET: { 8, 0, 6 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 14  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  % 
+	655     :   000f;  % MID TRIPLET: { 8, 0, 7 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 15  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  % 
+	656     :   0010;  % MID TRIPLET: { 8, 0, 8 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 16  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x00  0x00  0x11  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	657     :   0408;  % MID TRIPLET: { 8, 1, 0 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	658     :   0408;  % MID TRIPLET: { 8, 1, 1 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	659     :   0408;  % MID TRIPLET: { 8, 1, 2 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  % 
+	660     :   0409;  % MID TRIPLET: { 8, 1, 3 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 9   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  % 
+	661     :   040a;  % MID TRIPLET: { 8, 1, 4 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 10  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  % 
+	662     :   040b;  % MID TRIPLET: { 8, 1, 5 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 11  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  % 
+	663     :   040c;  % MID TRIPLET: { 8, 1, 6 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 12  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  % 
+	664     :   040d;  % MID TRIPLET: { 8, 1, 7 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 13  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  % 
+	665     :   040e;  % MID TRIPLET: { 8, 1, 8 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 14  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x01  0x01  0x12  0x13  0x14  0x15  0x16  0x17  % 
+	666     :   0807;  % MID TRIPLET: { 8, 2, 0 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	667     :   0807;  % MID TRIPLET: { 8, 2, 1 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	668     :   0807;  % MID TRIPLET: { 8, 2, 2 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	669     :   0807;  % MID TRIPLET: { 8, 2, 3 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  % 
+	670     :   0808;  % MID TRIPLET: { 8, 2, 4 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  % 
+	671     :   0809;  % MID TRIPLET: { 8, 2, 5 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 9   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  % 
+	672     :   080a;  % MID TRIPLET: { 8, 2, 6 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 10  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  % 
+	673     :   080b;  % MID TRIPLET: { 8, 2, 7 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 11  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  % 
+	674     :   080c;  % MID TRIPLET: { 8, 2, 8 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 12  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x02  0x02  0x13  0x14  0x15  0x16  0x17  % 
+	675     :   0c06;  % MID TRIPLET: { 8, 3, 0 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  % 
+	676     :   0c06;  % MID TRIPLET: { 8, 3, 1 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  % 
+	677     :   0c06;  % MID TRIPLET: { 8, 3, 2 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  % 
+	678     :   0c06;  % MID TRIPLET: { 8, 3, 3 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  % 
+	679     :   0c06;  % MID TRIPLET: { 8, 3, 4 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  % 
+	680     :   0c07;  % MID TRIPLET: { 8, 3, 5 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  0x14  % 
+	681     :   0c08;  % MID TRIPLET: { 8, 3, 6 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  % 
+	682     :   0c09;  % MID TRIPLET: { 8, 3, 7 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 9   ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  % 
+	683     :   0c0a;  % MID TRIPLET: { 8, 3, 8 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 10  ->   0x08  0x07  0x06  0x05  0x04  0x03  0x03  0x14  0x15  0x16  0x17  % 
+	684     :   1005;  % MID TRIPLET: { 8, 4, 0 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	685     :   1005;  % MID TRIPLET: { 8, 4, 1 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	686     :   1005;  % MID TRIPLET: { 8, 4, 2 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	687     :   1005;  % MID TRIPLET: { 8, 4, 3 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	688     :   1005;  % MID TRIPLET: { 8, 4, 4 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	689     :   1005;  % MID TRIPLET: { 8, 4, 5 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x04  0x04  % 
+	690     :   1006;  % MID TRIPLET: { 8, 4, 6 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x04  0x04  0x15  % 
+	691     :   1007;  % MID TRIPLET: { 8, 4, 7 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 7   ->   0x08  0x07  0x06  0x05  0x04  0x04  0x15  0x16  % 
+	692     :   1008;  % MID TRIPLET: { 8, 4, 8 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 8   ->   0x08  0x07  0x06  0x05  0x04  0x04  0x15  0x16  0x17  % 
+	693     :   1404;  % MID TRIPLET: { 8, 5, 0 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	694     :   1404;  % MID TRIPLET: { 8, 5, 1 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	695     :   1404;  % MID TRIPLET: { 8, 5, 2 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	696     :   1404;  % MID TRIPLET: { 8, 5, 3 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	697     :   1404;  % MID TRIPLET: { 8, 5, 4 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	698     :   1404;  % MID TRIPLET: { 8, 5, 5 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	699     :   1404;  % MID TRIPLET: { 8, 5, 6 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x05  0x05  % 
+	700     :   1405;  % MID TRIPLET: { 8, 5, 7 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 5   ->   0x08  0x07  0x06  0x05  0x05  0x16  % 
+	701     :   1406;  % MID TRIPLET: { 8, 5, 8 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 6   ->   0x08  0x07  0x06  0x05  0x05  0x16  0x17  % 
+	702     :   1803;  % MID TRIPLET: { 8, 6, 0 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	703     :   1803;  % MID TRIPLET: { 8, 6, 1 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	704     :   1803;  % MID TRIPLET: { 8, 6, 2 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	705     :   1803;  % MID TRIPLET: { 8, 6, 3 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	706     :   1803;  % MID TRIPLET: { 8, 6, 4 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	707     :   1803;  % MID TRIPLET: { 8, 6, 5 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	708     :   1803;  % MID TRIPLET: { 8, 6, 6 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	709     :   1803;  % MID TRIPLET: { 8, 6, 7 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3   ->   0x08  0x07  0x06  0x06  % 
+	710     :   1804;  % MID TRIPLET: { 8, 6, 8 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 4   ->   0x08  0x07  0x06  0x06  0x17  % 
+	711     :   1c02;  % MID TRIPLET: { 8, 7, 0 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	712     :   1c02;  % MID TRIPLET: { 8, 7, 1 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	713     :   1c02;  % MID TRIPLET: { 8, 7, 2 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	714     :   1c02;  % MID TRIPLET: { 8, 7, 3 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	715     :   1c02;  % MID TRIPLET: { 8, 7, 4 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	716     :   1c02;  % MID TRIPLET: { 8, 7, 5 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	717     :   1c02;  % MID TRIPLET: { 8, 7, 6 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	718     :   1c02;  % MID TRIPLET: { 8, 7, 7 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	719     :   1c02;  % MID TRIPLET: { 8, 7, 8 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2   ->   0x08  0x07  0x07  % 
+	720     :   2001;  % MID TRIPLET: { 8, 8, 0 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	721     :   2001;  % MID TRIPLET: { 8, 8, 1 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	722     :   2001;  % MID TRIPLET: { 8, 8, 2 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	723     :   2001;  % MID TRIPLET: { 8, 8, 3 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	724     :   2001;  % MID TRIPLET: { 8, 8, 4 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	725     :   2001;  % MID TRIPLET: { 8, 8, 5 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	726     :   2001;  % MID TRIPLET: { 8, 8, 6 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	727     :   2001;  % MID TRIPLET: { 8, 8, 7 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	728     :   2001;  % MID TRIPLET: { 8, 8, 8 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1   ->   0x08  0x08  % 
+	729     :   0009;  % BEGIN TRIPLET: { -, 0, 0 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 9    ->  08  07  06  05  04  03  02  01  00  00  % 
+	730     :   0009;  % BEGIN TRIPLET: { -, 0, 1 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 9    ->  08  07  06  05  04  03  02  01  00  00  % 
+	731     :   000a;  % BEGIN TRIPLET: { -, 0, 2 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 10   ->  08  07  06  05  04  03  02  01  00  00  11  % 
+	732     :   000b;  % BEGIN TRIPLET: { -, 0, 3 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 11   ->  08  07  06  05  04  03  02  01  00  00  11  12  % 
+	733     :   000c;  % BEGIN TRIPLET: { -, 0, 4 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 12   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  % 
+	734     :   000d;  % BEGIN TRIPLET: { -, 0, 5 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 13   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  14  % 
+	735     :   000e;  % BEGIN TRIPLET: { -, 0, 6 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 14   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  14  15  % 
+	736     :   000f;  % BEGIN TRIPLET: { -, 0, 7 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 15   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  14  15  16  % 
+	737     :   0010;  % BEGIN TRIPLET: { -, 0, 8 },   SUB-BRAID = 0 ,    START = 0 ,    STOP = 16   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  14  15  16  17  % 
+	738     :   0408;  % BEGIN TRIPLET: { -, 1, 0 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  03  02  01  01  % 
+	739     :   0408;  % BEGIN TRIPLET: { -, 1, 1 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  03  02  01  01  % 
+	740     :   0408;  % BEGIN TRIPLET: { -, 1, 2 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  03  02  01  01  % 
+	741     :   0409;  % BEGIN TRIPLET: { -, 1, 3 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 9    ->  08  07  06  05  04  03  02  01  01  12  % 
+	742     :   040a;  % BEGIN TRIPLET: { -, 1, 4 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 10   ->  08  07  06  05  04  03  02  01  01  12  13  % 
+	743     :   040b;  % BEGIN TRIPLET: { -, 1, 5 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 11   ->  08  07  06  05  04  03  02  01  01  12  13  14  % 
+	744     :   040c;  % BEGIN TRIPLET: { -, 1, 6 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 12   ->  08  07  06  05  04  03  02  01  01  12  13  14  15  % 
+	745     :   040d;  % BEGIN TRIPLET: { -, 1, 7 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 13   ->  08  07  06  05  04  03  02  01  01  12  13  14  15  16  % 
+	746     :   040e;  % BEGIN TRIPLET: { -, 1, 8 },   SUB-BRAID = 1 ,    START = 0 ,    STOP = 14   ->  08  07  06  05  04  03  02  01  01  12  13  14  15  16  17  % 
+	747     :   0807;  % BEGIN TRIPLET: { -, 2, 0 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  03  02  02  % 
+	748     :   0807;  % BEGIN TRIPLET: { -, 2, 1 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  03  02  02  % 
+	749     :   0807;  % BEGIN TRIPLET: { -, 2, 2 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  03  02  02  % 
+	750     :   0807;  % BEGIN TRIPLET: { -, 2, 3 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  03  02  02  % 
+	751     :   0808;  % BEGIN TRIPLET: { -, 2, 4 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  03  02  02  13  % 
+	752     :   0809;  % BEGIN TRIPLET: { -, 2, 5 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 9    ->  08  07  06  05  04  03  02  02  13  14  % 
+	753     :   080a;  % BEGIN TRIPLET: { -, 2, 6 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 10   ->  08  07  06  05  04  03  02  02  13  14  15  % 
+	754     :   080b;  % BEGIN TRIPLET: { -, 2, 7 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 11   ->  08  07  06  05  04  03  02  02  13  14  15  16  % 
+	755     :   080c;  % BEGIN TRIPLET: { -, 2, 8 },   SUB-BRAID = 2 ,    START = 0 ,    STOP = 12   ->  08  07  06  05  04  03  02  02  13  14  15  16  17  % 
+	756     :   0c06;  % BEGIN TRIPLET: { -, 3, 0 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  03  03  % 
+	757     :   0c06;  % BEGIN TRIPLET: { -, 3, 1 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  03  03  % 
+	758     :   0c06;  % BEGIN TRIPLET: { -, 3, 2 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  03  03  % 
+	759     :   0c06;  % BEGIN TRIPLET: { -, 3, 3 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  03  03  % 
+	760     :   0c06;  % BEGIN TRIPLET: { -, 3, 4 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  03  03  % 
+	761     :   0c07;  % BEGIN TRIPLET: { -, 3, 5 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  03  03  14  % 
+	762     :   0c08;  % BEGIN TRIPLET: { -, 3, 6 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  03  03  14  15  % 
+	763     :   0c09;  % BEGIN TRIPLET: { -, 3, 7 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 9    ->  08  07  06  05  04  03  03  14  15  16  % 
+	764     :   0c0a;  % BEGIN TRIPLET: { -, 3, 8 },   SUB-BRAID = 3 ,    START = 0 ,    STOP = 10   ->  08  07  06  05  04  03  03  14  15  16  17  % 
+	765     :   1005;  % BEGIN TRIPLET: { -, 4, 0 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	766     :   1005;  % BEGIN TRIPLET: { -, 4, 1 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	767     :   1005;  % BEGIN TRIPLET: { -, 4, 2 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	768     :   1005;  % BEGIN TRIPLET: { -, 4, 3 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	769     :   1005;  % BEGIN TRIPLET: { -, 4, 4 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	770     :   1005;  % BEGIN TRIPLET: { -, 4, 5 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  04  04  % 
+	771     :   1006;  % BEGIN TRIPLET: { -, 4, 6 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  04  04  15  % 
+	772     :   1007;  % BEGIN TRIPLET: { -, 4, 7 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 7    ->  08  07  06  05  04  04  15  16  % 
+	773     :   1008;  % BEGIN TRIPLET: { -, 4, 8 },   SUB-BRAID = 4 ,    START = 0 ,    STOP = 8    ->  08  07  06  05  04  04  15  16  17  % 
+	774     :   1404;  % BEGIN TRIPLET: { -, 5, 0 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	775     :   1404;  % BEGIN TRIPLET: { -, 5, 1 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	776     :   1404;  % BEGIN TRIPLET: { -, 5, 2 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	777     :   1404;  % BEGIN TRIPLET: { -, 5, 3 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	778     :   1404;  % BEGIN TRIPLET: { -, 5, 4 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	779     :   1404;  % BEGIN TRIPLET: { -, 5, 5 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	780     :   1404;  % BEGIN TRIPLET: { -, 5, 6 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 4    ->  08  07  06  05  05  % 
+	781     :   1405;  % BEGIN TRIPLET: { -, 5, 7 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 5    ->  08  07  06  05  05  16  % 
+	782     :   1406;  % BEGIN TRIPLET: { -, 5, 8 },   SUB-BRAID = 5 ,    START = 0 ,    STOP = 6    ->  08  07  06  05  05  16  17  % 
+	783     :   1803;  % BEGIN TRIPLET: { -, 6, 0 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	784     :   1803;  % BEGIN TRIPLET: { -, 6, 1 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	785     :   1803;  % BEGIN TRIPLET: { -, 6, 2 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	786     :   1803;  % BEGIN TRIPLET: { -, 6, 3 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	787     :   1803;  % BEGIN TRIPLET: { -, 6, 4 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	788     :   1803;  % BEGIN TRIPLET: { -, 6, 5 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	789     :   1803;  % BEGIN TRIPLET: { -, 6, 6 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	790     :   1803;  % BEGIN TRIPLET: { -, 6, 7 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 3    ->  08  07  06  06  % 
+	791     :   1804;  % BEGIN TRIPLET: { -, 6, 8 },   SUB-BRAID = 6 ,    START = 0 ,    STOP = 4    ->  08  07  06  06  17  % 
+	792     :   1c02;  % BEGIN TRIPLET: { -, 7, 0 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	793     :   1c02;  % BEGIN TRIPLET: { -, 7, 1 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	794     :   1c02;  % BEGIN TRIPLET: { -, 7, 2 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	795     :   1c02;  % BEGIN TRIPLET: { -, 7, 3 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	796     :   1c02;  % BEGIN TRIPLET: { -, 7, 4 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	797     :   1c02;  % BEGIN TRIPLET: { -, 7, 5 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	798     :   1c02;  % BEGIN TRIPLET: { -, 7, 6 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	799     :   1c02;  % BEGIN TRIPLET: { -, 7, 7 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	800     :   1c02;  % BEGIN TRIPLET: { -, 7, 8 },   SUB-BRAID = 7 ,    START = 0 ,    STOP = 2    ->  08  07  07  % 
+	801     :   2001;  % BEGIN TRIPLET: { -, 8, 0 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	802     :   2001;  % BEGIN TRIPLET: { -, 8, 1 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	803     :   2001;  % BEGIN TRIPLET: { -, 8, 2 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	804     :   2001;  % BEGIN TRIPLET: { -, 8, 3 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	805     :   2001;  % BEGIN TRIPLET: { -, 8, 4 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	806     :   2001;  % BEGIN TRIPLET: { -, 8, 5 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	807     :   2001;  % BEGIN TRIPLET: { -, 8, 6 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	808     :   2001;  % BEGIN TRIPLET: { -, 8, 7 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	809     :   2001;  % BEGIN TRIPLET: { -, 8, 8 },   SUB-BRAID = 8 ,    START = 0 ,    STOP = 1    ->  08  08  % 
+	810     :   0111;  % END TRIPLET: { - , 0, 0},  SUB-BRAID = 0 ,  START = 8 ,  STOP = 17   ->  00  00  11  12  13  14  15  16  17  18  %
+	811     :   050f;  % END TRIPLET: { - , 0, 1},  SUB-BRAID = 0 ,  START = 8 ,  STOP = 15   ->  01  12  13  14  15  16  17  18  %
+	812     :   08ed;  % END TRIPLET: { - , 0, 2},  SUB-BRAID = 0 ,  START = 7 ,  STOP = 13   ->  02  13  14  15  16  17  18  %
+	813     :   0ccb;  % END TRIPLET: { - , 0, 3},  SUB-BRAID = 0 ,  START = 6 ,  STOP = 11   ->  03  14  15  16  17  18  %
+	814     :   10a9;  % END TRIPLET: { - , 0, 4},  SUB-BRAID = 0 ,  START = 5 ,  STOP = 9    ->  04  15  16  17  18  %
+	815     :   1487;  % END TRIPLET: { - , 0, 5},  SUB-BRAID = 0 ,  START = 4 ,  STOP = 7    ->  05  16  17  18  %
+	816     :   1865;  % END TRIPLET: { - , 0, 6},  SUB-BRAID = 0 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	817     :   1c43;  % END TRIPLET: { - , 0, 7},  SUB-BRAID = 0 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	818     :   2021;  % END TRIPLET: { - , 0, 8},  SUB-BRAID = 0 ,  START = 1 ,  STOP = 1    ->  08  %
+	819     :   00f1;  % END TRIPLET: { - , 1, 0},  SUB-BRAID = 1 ,  START = 7 ,  STOP = 17   ->  01  00  00  11  12  13  14  15  16  17  18  %
+	820     :   04ef;  % END TRIPLET: { - , 1, 1},  SUB-BRAID = 1 ,  START = 7 ,  STOP = 15   ->  01  01  12  13  14  15  16  17  18  %
+	821     :   08ed;  % END TRIPLET: { - , 1, 2},  SUB-BRAID = 1 ,  START = 7 ,  STOP = 13   ->  02  13  14  15  16  17  18  %
+	822     :   0ccb;  % END TRIPLET: { - , 1, 3},  SUB-BRAID = 1 ,  START = 6 ,  STOP = 11   ->  03  14  15  16  17  18  %
+	823     :   10a9;  % END TRIPLET: { - , 1, 4},  SUB-BRAID = 1 ,  START = 5 ,  STOP = 9    ->  04  15  16  17  18  %
+	824     :   1487;  % END TRIPLET: { - , 1, 5},  SUB-BRAID = 1 ,  START = 4 ,  STOP = 7    ->  05  16  17  18  %
+	825     :   1865;  % END TRIPLET: { - , 1, 6},  SUB-BRAID = 1 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	826     :   1c43;  % END TRIPLET: { - , 1, 7},  SUB-BRAID = 1 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	827     :   2021;  % END TRIPLET: { - , 1, 8},  SUB-BRAID = 1 ,  START = 1 ,  STOP = 1    ->  08  %
+	828     :   00d1;  % END TRIPLET: { - , 2, 0},  SUB-BRAID = 2 ,  START = 6 ,  STOP = 17   ->  02  01  00  00  11  12  13  14  15  16  17  18  %
+	829     :   04cf;  % END TRIPLET: { - , 2, 1},  SUB-BRAID = 2 ,  START = 6 ,  STOP = 15   ->  02  01  01  12  13  14  15  16  17  18  %
+	830     :   08cd;  % END TRIPLET: { - , 2, 2},  SUB-BRAID = 2 ,  START = 6 ,  STOP = 13   ->  02  02  13  14  15  16  17  18  %
+	831     :   0ccb;  % END TRIPLET: { - , 2, 3},  SUB-BRAID = 2 ,  START = 6 ,  STOP = 11   ->  03  14  15  16  17  18  %
+	832     :   10a9;  % END TRIPLET: { - , 2, 4},  SUB-BRAID = 2 ,  START = 5 ,  STOP = 9    ->  04  15  16  17  18  %
+	833     :   1487;  % END TRIPLET: { - , 2, 5},  SUB-BRAID = 2 ,  START = 4 ,  STOP = 7    ->  05  16  17  18  %
+	834     :   1865;  % END TRIPLET: { - , 2, 6},  SUB-BRAID = 2 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	835     :   1c43;  % END TRIPLET: { - , 2, 7},  SUB-BRAID = 2 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	836     :   2021;  % END TRIPLET: { - , 2, 8},  SUB-BRAID = 2 ,  START = 1 ,  STOP = 1    ->  08  %
+	837     :   00b1;  % END TRIPLET: { - , 3, 0},  SUB-BRAID = 3 ,  START = 5 ,  STOP = 17   ->  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	838     :   04af;  % END TRIPLET: { - , 3, 1},  SUB-BRAID = 3 ,  START = 5 ,  STOP = 15   ->  03  02  01  01  12  13  14  15  16  17  18  %
+	839     :   08ad;  % END TRIPLET: { - , 3, 2},  SUB-BRAID = 3 ,  START = 5 ,  STOP = 13   ->  03  02  02  13  14  15  16  17  18  %
+	840     :   0cab;  % END TRIPLET: { - , 3, 3},  SUB-BRAID = 3 ,  START = 5 ,  STOP = 11   ->  03  03  14  15  16  17  18  %
+	841     :   10a9;  % END TRIPLET: { - , 3, 4},  SUB-BRAID = 3 ,  START = 5 ,  STOP = 9    ->  04  15  16  17  18  %
+	842     :   1487;  % END TRIPLET: { - , 3, 5},  SUB-BRAID = 3 ,  START = 4 ,  STOP = 7    ->  05  16  17  18  %
+	843     :   1865;  % END TRIPLET: { - , 3, 6},  SUB-BRAID = 3 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	844     :   1c43;  % END TRIPLET: { - , 3, 7},  SUB-BRAID = 3 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	845     :   2021;  % END TRIPLET: { - , 3, 8},  SUB-BRAID = 3 ,  START = 1 ,  STOP = 1    ->  08  %
+	846     :   0091;  % END TRIPLET: { - , 4, 0},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 17   ->  04  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	847     :   048f;  % END TRIPLET: { - , 4, 1},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 15   ->  04  03  02  01  01  12  13  14  15  16  17  18  %
+	848     :   088d;  % END TRIPLET: { - , 4, 2},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 13   ->  04  03  02  02  13  14  15  16  17  18  %
+	849     :   0c8b;  % END TRIPLET: { - , 4, 3},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 11   ->  04  03  03  14  15  16  17  18  %
+	850     :   1089;  % END TRIPLET: { - , 4, 4},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 9    ->  04  04  15  16  17  18  %
+	851     :   1487;  % END TRIPLET: { - , 4, 5},  SUB-BRAID = 4 ,  START = 4 ,  STOP = 7    ->  05  16  17  18  %
+	852     :   1865;  % END TRIPLET: { - , 4, 6},  SUB-BRAID = 4 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	853     :   1c43;  % END TRIPLET: { - , 4, 7},  SUB-BRAID = 4 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	854     :   2021;  % END TRIPLET: { - , 4, 8},  SUB-BRAID = 4 ,  START = 1 ,  STOP = 1    ->  08  %
+	855     :   0071;  % END TRIPLET: { - , 5, 0},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 17   ->  05  04  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	856     :   046f;  % END TRIPLET: { - , 5, 1},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 15   ->  05  04  03  02  01  01  12  13  14  15  16  17  18  %
+	857     :   086d;  % END TRIPLET: { - , 5, 2},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 13   ->  05  04  03  02  02  13  14  15  16  17  18  %
+	858     :   0c6b;  % END TRIPLET: { - , 5, 3},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 11   ->  05  04  03  03  14  15  16  17  18  %
+	859     :   1069;  % END TRIPLET: { - , 5, 4},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 9    ->  05  04  04  15  16  17  18  %
+	860     :   1467;  % END TRIPLET: { - , 5, 5},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 7    ->  05  05  16  17  18  %
+	861     :   1865;  % END TRIPLET: { - , 5, 6},  SUB-BRAID = 5 ,  START = 3 ,  STOP = 5    ->  06  17  18  %
+	862     :   1c43;  % END TRIPLET: { - , 5, 7},  SUB-BRAID = 5 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	863     :   2021;  % END TRIPLET: { - , 5, 8},  SUB-BRAID = 5 ,  START = 1 ,  STOP = 1    ->  08  %
+	864     :   0051;  % END TRIPLET: { - , 6, 0},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 17   ->  06  05  04  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	865     :   044f;  % END TRIPLET: { - , 6, 1},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 15   ->  06  05  04  03  02  01  01  12  13  14  15  16  17  18  %
+	866     :   084d;  % END TRIPLET: { - , 6, 2},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 13   ->  06  05  04  03  02  02  13  14  15  16  17  18  %
+	867     :   0c4b;  % END TRIPLET: { - , 6, 3},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 11   ->  06  05  04  03  03  14  15  16  17  18  %
+	868     :   1049;  % END TRIPLET: { - , 6, 4},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 9    ->  06  05  04  04  15  16  17  18  %
+	869     :   1447;  % END TRIPLET: { - , 6, 5},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 7    ->  06  05  05  16  17  18  %
+	870     :   1845;  % END TRIPLET: { - , 6, 6},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 5    ->  06  06  17  18  %
+	871     :   1c43;  % END TRIPLET: { - , 6, 7},  SUB-BRAID = 6 ,  START = 2 ,  STOP = 3    ->  07  18  %
+	872     :   2021;  % END TRIPLET: { - , 6, 8},  SUB-BRAID = 6 ,  START = 1 ,  STOP = 1    ->  08  %
+	873     :   0031;  % END TRIPLET: { - , 7, 0},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 17   ->  07  06  05  04  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	874     :   042f;  % END TRIPLET: { - , 7, 1},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 15   ->  07  06  05  04  03  02  01  01  12  13  14  15  16  17  18  %
+	875     :   082d;  % END TRIPLET: { - , 7, 2},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 13   ->  07  06  05  04  03  02  02  13  14  15  16  17  18  %
+	876     :   0c2b;  % END TRIPLET: { - , 7, 3},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 11   ->  07  06  05  04  03  03  14  15  16  17  18  %
+	877     :   1029;  % END TRIPLET: { - , 7, 4},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 9    ->  07  06  05  04  04  15  16  17  18  %
+	878     :   1427;  % END TRIPLET: { - , 7, 5},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 7    ->  07  06  05  05  16  17  18  %
+	879     :   1825;  % END TRIPLET: { - , 7, 6},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 5    ->  07  06  06  17  18  %
+	880     :   1c23;  % END TRIPLET: { - , 7, 7},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 3    ->  07  07  18  %
+	881     :   2021;  % END TRIPLET: { - , 7, 8},  SUB-BRAID = 7 ,  START = 1 ,  STOP = 1    ->  08  %
+	882     :   0011;  % END TRIPLET: { - , 8, 0},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 17   ->  08  07  06  05  04  03  02  01  00  00  11  12  13  14  15  16  17  18  %
+	883     :   040f;  % END TRIPLET: { - , 8, 1},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 15   ->  08  07  06  05  04  03  02  01  01  12  13  14  15  16  17  18  %
+	884     :   080d;  % END TRIPLET: { - , 8, 2},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 13   ->  08  07  06  05  04  03  02  02  13  14  15  16  17  18  %
+	885     :   0c0b;  % END TRIPLET: { - , 8, 3},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 11   ->  08  07  06  05  04  03  03  14  15  16  17  18  %
+	886     :   1009;  % END TRIPLET: { - , 8, 4},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 9    ->  08  07  06  05  04  04  15  16  17  18  %
+	887     :   1407;  % END TRIPLET: { - , 8, 5},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 7    ->  08  07  06  05  05  16  17  18  %
+	888     :   1805;  % END TRIPLET: { - , 8, 6},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 5    ->  08  07  06  06  17  18  %
+	889     :   1c03;  % END TRIPLET: { - , 8, 7},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 3    ->  08  07  07  18  %
+	890     :   2001;  % END TRIPLET: { - , 8, 8},  SUB-BRAID = 8 ,  START = 0 ,  STOP = 1    ->  08  08  %
+
+END;

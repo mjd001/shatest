@@ -1,0 +1,179 @@
+
+* - If in last byte slot,                                             *
+*   -> Write 0x8000_0000 to next word.                                *
+*   -> Write 0x0000_0000 to word after next                           *
+*   -> Flag extra block process                                       *
+
+else if (track_ptr == 4'hD) begin
+   if (byte_position == 2'b11) begin  // M2654: (1) A2 -> A6 (2): A6 x 14 -> A4
+      macro_vect       <=  4'b0011;
+      one_more_block   <=  2'b10;       // Extra block needed, it's zero filled
+      end
+   else begin         // M134:  A1 -> A3 -> A4
+      macro_vect   <=  4'b0000;              
+      end
+   end
+
+A2:  Write 0x8000_0000 to next word. 
+A6:  Write all zero’s to next word. 
+end of msg
+start of extended message
+A6:  Write all zero’s to next word. X 15
+
+
+
+
+
+assign RAM_Data_OUT_p = (dat_sw_sel == 3'b000) ?  RAM_Data_OUT :                      // Normal
+                        (dat_sw_sel == 3'b001) ? {RAM_Data_OUT[31:8],        8'h80}:  // Last byte loc 2
+                        (dat_sw_sel == 3'b010) ? {RAM_Data_OUT[31:16],    16'h8000}:  // Last byte loc 1
+                        (dat_sw_sel == 3'b011) ? {RAM_Data_OUT[31:24],  24'h800000}:  // Last byte loc 0
+                        (dat_sw_sel == 3'b100) ? 32'h80000000:                        // Last byte loc 3 of previous word 
+                        (dat_sw_sel == 3'b101) ? {RAM_Data_OUT[31:19], msg_bit_len}:  // Bit length
+                        (dat_sw_sel == 3'b110) ? 32'h00000000 :  32'h00000000;        // Zero Pad word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Macro   Last Byte position in M(last)?
+-------------------------------------------------------------------  
+M134:   Word# = 0 to 12 and bytes 0, 1 or 2 contains last data byte.
+M234:   Word# = 0 to 12 and byte 3 contains last data byte.
+
+
+
+M14 :   Word# = 13 and bytes 0, 1 or 2 contains last data byte
+M2654:  Word# = 13 and byte 3 contains last data byte
+
+
+M1654:  Word# = 14 and bytes 0, 1 or 2 contains last data byte.
+M254:   Word# = 14 and byte 3 contains last data byte.
+
+
+M154:   Word# = 15 and bytes 0, 1 or 2 contains last data byte.
+M25p4:  Word# = 15 and byte 3 contains last data byte.
+
+
+Macro Sequence States and descriptor macro_vect
+------------------------------------------------
+M134:    A1 -> A3 -> A4          macro_vect = 4'b0000
+M234:    A2 -> A3 -> A4          macro_vect = 4'b0001
+
+M14:     A1 -> A4                macro_vect = 4'b0100
+M2654:   A2 -> A6 -> A5 -> A4    macro_vect = 4'b0011
+
+M1654:   A1 -> A6 -> A5 -> A4    macro_vect = 4'b0100 
+M254:    A2 -> A5 -> A4          macro_vect = 4'b0101
+
+M154:    A1 -> A5 -> A4          macro_vect = 4'b0110
+M25p4:   A2 -> A5'-> A4          macro_vect = 4'b0111
+
+
+
+
+
+
+
+Macro operation
+---------------
+A1:  Append 0x80 and up to 3 "0x00" to last byte.
+A2:  Write 0x8000_0000 to next word. 
+A3:  Write 0x0000_0000 from last data word + 1 through word 13.
+A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+A5:  Write 13 zero words to next (pseudo/zero) block.
+A5p: Write 12 zero words to next (pseudo/zero) block.
+A6:  Write all zero’s to next word. 
+
+
+Last Word
+----------
+Macro M25p4    macro_vect       <=  4'b0111; 
+- Jump to state 3 and wait for message process to end
+- Extra Message -> A2:  Write 0x8000_0000 to next word. 
+- Extra Message -> A3:  Write 0x0000_0000 from last data word + 1 through word 13.
+- Extra Message -> A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+Macro M154     macro_vect       <=  4'b0110;
+- A1:  Append 0x80 and up to 3 "0x00" to last byte.
+- Extra Message -> A5:  Write 13 zero words to next (pseudo/zero) block.
+- Extra Message -> A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+Last Word - 1 
+--------------
+Macro M254      macro_vect       <=  4'b0101;
+- A2:  Write 0x8000_0000 to next word.
+- Extra Message -> A6:  Write all zero’s to next word.  X 15
+- Extra Message -> A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+Macro M1654          macro_vect       <=  4'b0100;
+- A1:  Append 0x80 and up to 3 "0x00" to last byte.
+- A6:  Write all zero’s to next word. 
+- Extra Message -> A6:  Write all zero’s to next word.  X 15
+- Extra Message -> A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+Last Word - 2 (byte 3)
+----------------------
+Macro M2654: macro_vect       <=  4'b0011;
+- A2:  Write 0x8000_0000 to next word.
+- A6:  Write all zero’s to next word. 
+- Extra Message -> A6:  Write all zero’s to next word.  X 15
+- Extra Message -> A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+Last Word - 2 (byte's 0:2)
+--------------------------
+Macro M14:    macro_vect   <=  4'b0000;
+A1:  Append 0x80 and up to 3 "0x00" to last byte.
+A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+All other words (last byte position == 2'b11)
+---------------------------------------------
+Macro M234:   macro_vect   <=  4'b0001;
+- A2:  Write 0x8000_0000 to next word. 
+- A3:  Write 0x0000_0000 from last data word + 1 through word 13.
+- A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+All other words (last byte position != 2'b11)
+---------------------------------------------
+Macro M134:   macro_vect   <=  4'b0000; 
+- A1:  Append 0x80 and up to 3 "0x00" to last byte.
+- A3:  Write 0x0000_0000 from last data word + 1 through word 13.
+- A4:  Write upper 4 bytes of bit length to Word 14, lower to word 15.
+
+
+
+assign RAM_Data_OUT_p = (dat_sw_sel == 3'b000) ?  RAM_Data_OUT :                      // Normal
+                        (dat_sw_sel == 3'b001) ? {RAM_Data_OUT[31:8],        8'h80}:  // Last byte loc 2
+                        (dat_sw_sel == 3'b010) ? {RAM_Data_OUT[31:16],    16'h8000}:  // Last byte loc 1
+                        (dat_sw_sel == 3'b011) ? {RAM_Data_OUT[31:24],  24'h800000}:  // Last byte loc 0
+                        (dat_sw_sel == 3'b100) ? 32'h80000000:                        // Last byte loc 3 of previous word 
+                        (dat_sw_sel == 3'b101) ? {RAM_Data_OUT[31:19], msg_bit_len}:  // Bit length
+                        (dat_sw_sel == 3'b110) ? 32'h00000000 :  32'h00000000;        // Zero Pad word
+
+
+
+
+

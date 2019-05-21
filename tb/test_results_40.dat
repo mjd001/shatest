@@ -1,0 +1,224 @@
+-----------------------------------------------------------
+- 1) Generate Test Data from PRNG source                  -
+- 2) Calculate SHA256 HASH and obtain known good result   -
+- 3) Use test data for DUT testing                        -
+- 4) Read Hash from DUT and compare known good result     -
+-----------------------------------------------------------
+
+SHA256 Constants for M:
+-----------------------
+Set Byte Count = 40 
+Word Range = W[0:9] 
+Last Byte Location = Msg Block[1], Word[9], Byte[3] 
+Message Block Range M[0:1] 
+Message bit count = 320 (0x00000140) 
+
+Message Data Set M:
+-------------------
+ 091a2b3c   048d159e   02468acf   81234567   c091a2b3   e048d159   f02468ac   78123456  
+ 3c091a2b   9e048d15  
+-----------------
+
+MESSAGE M[0]: 
+----------------
+ 091a2b3c   048d159e   02468acf   81234567   c091a2b3   e048d159   f02468ac   78123456  
+ 3c091a2b   9e048d15  
+
+MESSAGE SCHEDULE FOR M[0]:  
+------------------------------
+ 091a2b3c   048d159e   02468acf   81234567   c091a2b3   e048d159   f02468ac   78123456  
+ 3c091a2b   9e048d15   80000000   00000000   00000000   00000000   00000000   00000140  
+ 211df20c   c214b27b   58162d0e   67a54902   2f6278d0   4bd1619a   92863195   4d90bd9f  
+ f8b4a67e   508a0578   af73d767   716979a5   dd46603c   26807e5c   ca0f625c   8a836d2f  
+ 9257c6d0   e98a9eaa   3f91ef9e   9d2c74c4   85a14f71   7fcf0914   c3d01ea7   11180bf9  
+ 6ae57344   c40d5861   7f16ef3a   f8361a7d   aa8525b9   30e2abaa   a677398f   38efbafc  
+ c18dd5f6   d33bc030   0fecd6d7   803f619f   8d79f91c   d376d580   b34dd83e   5c430e86  
+ 226750ec   7b51949e   a4232efa   adddfe9d   691e25b1   eac878f1   eb024c4b   0f829781  
+
+HASH CALCULATION FOR M[0]:   
+-------------------------------
+HASH[0]:  07ba84ed
+HASH[1]:  92a790cd
+HASH[2]:  e1bbc7b6
+HASH[3]:  e556aa21
+HASH[4]:  12121430
+HASH[5]:  215acbe5
+HASH[6]:  8d548112
+HASH[7]:  823c39b7
+
+
+
+SHA256 Hash Calculation for M:
+------------------------------
+HASH[0] = 07ba84ed
+HASH[1] = 92a790cd
+HASH[2] = e1bbc7b6
+HASH[3] = e556aa21
+HASH[4] = 12121430
+HASH[5] = 215acbe5
+HASH[6] = 8d548112
+HASH[7] = 823c39b7
+
+
+----------------------------------------
+   ----->   BEGIN: RTL TESTING  <-----  
+----------------------------------------
+
+Write message and message size to DUT...
+
+-> MESSAGE WRITTEN TO DUT RAM: 10 words [0:9] @(444.220 us)
+
+-> MESSAGE SIZE SENT: 40 bytes [0:39] @(444.380 us)
+
+-> START BIT WRITTEN TO DUT COMMAND REG. @(444.400 us)
+
+-> HASH_PROC_GO ASSERTED @(444.481 us)
+
+Message schedule block 0 Actual vs Expected
+---------------------------------------------
+OK: MSG BLK [0], MSG SCH RAM[0] = 091a2b3c 
+OK: MSG BLK [0], MSG SCH RAM[1] = 048d159e 
+OK: MSG BLK [0], MSG SCH RAM[2] = 02468acf 
+OK: MSG BLK [0], MSG SCH RAM[3] = 81234567 
+OK: MSG BLK [0], MSG SCH RAM[4] = c091a2b3 
+OK: MSG BLK [0], MSG SCH RAM[5] = e048d159 
+OK: MSG BLK [0], MSG SCH RAM[6] = f02468ac 
+OK: MSG BLK [0], MSG SCH RAM[7] = 78123456 
+OK: MSG BLK [0], MSG SCH RAM[8] = 3c091a2b 
+OK: MSG BLK [0], MSG SCH RAM[9] = 9e048d15 
+OK: MSG BLK [0], MSG SCH RAM[10] = 80000000 
+OK: MSG BLK [0], MSG SCH RAM[11] = 00000000 
+OK: MSG BLK [0], MSG SCH RAM[12] = 00000000 
+OK: MSG BLK [0], MSG SCH RAM[13] = 00000000 
+OK: MSG BLK [0], MSG SCH RAM[14] = 00000000 
+OK: MSG BLK [0], MSG SCH RAM[15] = 00000140 
+OK: MSG BLK [0], MSG SCH RAM[16] = 211df20c 
+OK: MSG BLK [0], MSG SCH RAM[17] = c214b27b 
+OK: MSG BLK [0], MSG SCH RAM[18] = 58162d0e 
+OK: MSG BLK [0], MSG SCH RAM[19] = 67a54902 
+OK: MSG BLK [0], MSG SCH RAM[20] = 2f6278d0 
+OK: MSG BLK [0], MSG SCH RAM[21] = 4bd1619a 
+OK: MSG BLK [0], MSG SCH RAM[22] = 92863195 
+OK: MSG BLK [0], MSG SCH RAM[23] = 4d90bd9f 
+OK: MSG BLK [0], MSG SCH RAM[24] = f8b4a67e 
+OK: MSG BLK [0], MSG SCH RAM[25] = 508a0578 
+OK: MSG BLK [0], MSG SCH RAM[26] = af73d767 
+OK: MSG BLK [0], MSG SCH RAM[27] = 716979a5 
+OK: MSG BLK [0], MSG SCH RAM[28] = dd46603c 
+OK: MSG BLK [0], MSG SCH RAM[29] = 26807e5c 
+OK: MSG BLK [0], MSG SCH RAM[30] = ca0f625c 
+OK: MSG BLK [0], MSG SCH RAM[31] = 8a836d2f 
+OK: MSG BLK [0], MSG SCH RAM[32] = 9257c6d0 
+OK: MSG BLK [0], MSG SCH RAM[33] = e98a9eaa 
+OK: MSG BLK [0], MSG SCH RAM[34] = 3f91ef9e 
+OK: MSG BLK [0], MSG SCH RAM[35] = 9d2c74c4 
+OK: MSG BLK [0], MSG SCH RAM[36] = 85a14f71 
+OK: MSG BLK [0], MSG SCH RAM[37] = 7fcf0914 
+OK: MSG BLK [0], MSG SCH RAM[38] = c3d01ea7 
+OK: MSG BLK [0], MSG SCH RAM[39] = 11180bf9 
+OK: MSG BLK [0], MSG SCH RAM[40] = 6ae57344 
+OK: MSG BLK [0], MSG SCH RAM[41] = c40d5861 
+OK: MSG BLK [0], MSG SCH RAM[42] = 7f16ef3a 
+OK: MSG BLK [0], MSG SCH RAM[43] = f8361a7d 
+OK: MSG BLK [0], MSG SCH RAM[44] = aa8525b9 
+OK: MSG BLK [0], MSG SCH RAM[45] = 30e2abaa 
+OK: MSG BLK [0], MSG SCH RAM[46] = a677398f 
+OK: MSG BLK [0], MSG SCH RAM[47] = 38efbafc 
+OK: MSG BLK [0], MSG SCH RAM[48] = c18dd5f6 
+OK: MSG BLK [0], MSG SCH RAM[49] = d33bc030 
+OK: MSG BLK [0], MSG SCH RAM[50] = 0fecd6d7 
+OK: MSG BLK [0], MSG SCH RAM[51] = 803f619f 
+OK: MSG BLK [0], MSG SCH RAM[52] = 8d79f91c 
+OK: MSG BLK [0], MSG SCH RAM[53] = d376d580 
+OK: MSG BLK [0], MSG SCH RAM[54] = b34dd83e 
+OK: MSG BLK [0], MSG SCH RAM[55] = 5c430e86 
+OK: MSG BLK [0], MSG SCH RAM[56] = 226750ec 
+OK: MSG BLK [0], MSG SCH RAM[57] = 7b51949e 
+OK: MSG BLK [0], MSG SCH RAM[58] = a4232efa 
+OK: MSG BLK [0], MSG SCH RAM[59] = adddfe9d 
+OK: MSG BLK [0], MSG SCH RAM[60] = 691e25b1 
+OK: MSG BLK [0], MSG SCH RAM[61] = eac878f1 
+OK: MSG BLK [0], MSG SCH RAM[62] = eb024c4b 
+OK: MSG BLK [0], MSG SCH RAM[63] = 0f829781 
+
+Message schedule block 0 Actual vs Expected
+---------------------------------------------
+OK: HASH[0], = 6a09e667 
+OK: HASH[1], = bb67ae85 
+OK: HASH[2], = 3c6ef372 
+OK: HASH[3], = a54ff53a 
+OK: HASH[4], = 510e527f 
+OK: HASH[5], = 9b05688c 
+OK: HASH[6], = 1f83d9ab 
+OK: HASH[7], = 5be0cd19 
+
+DUT MESSAGE METADATA @(452.240 us)
+--------------------------------------
+DUT Message Bit Length           = (HEX: 0x00140) 
+DUT LAST BYTE/LAST WORD POSITION = (BIN: b11)  
+DUT NUMBER OF BLOCKS IN MESSAGE  = (BIN: b00)  
+
+READ HASH RESULT VIA AVALON BUS
+-------------------------------
+HASH[1]  ADDR: 0x00000000 :  0x07ba84ed    
+HASH[2]  ADDR: 0x00000004 :  0x92a790cd    
+HASH[3]  ADDR: 0x00000008 :  0xe1bbc7b6    
+HASH[4]  ADDR: 0x0000000c :  0xe556aa21    
+HASH[5]  ADDR: 0x00000010 :  0x12121430    
+HASH[6]  ADDR: 0x00000014 :  0x215acbe5    
+HASH[7]  ADDR: 0x00000018 :  0x8d548112    
+HASH[8]  ADDR: 0x0000001c :  0x823c39b7    
+
+MESSAGE BYTE COUNT: 0x00000028 (40) 
+
+
+DUT SHA256 Results  @(454.400 us)       
+---------------------------------
+
+Test Bench Hash Result (SW Calculated):
+---------------------------------------
+TB Hash[0] = 0x07ba84ed
+TB Hash[1] = 0x92a790cd
+TB Hash[2] = 0xe1bbc7b6
+TB Hash[3] = 0xe556aa21
+TB Hash[4] = 0x12121430
+TB Hash[5] = 0x215acbe5
+TB Hash[6] = 0x8d548112
+TB Hash[7] = 0x823c39b7
+
+DUT Hash Result (Avalon Bus):
+-----------------------------
+DUT Hash[0] = 0x07ba84ed
+DUT Hash[1] = 0x92a790cd
+DUT Hash[2] = 0xe1bbc7b6
+DUT Hash[3] = 0xe556aa21
+DUT Hash[4] = 0x12121430
+DUT Hash[5] = 0x215acbe5
+DUT Hash[6] = 0x8d548112
+DUT Hash[7] = 0x823c39b7
+
+DUT Hash Result (probe):
+------------------------
+DUT Memory Array Hash[0] = 0x07ba84ed
+DUT Memory Array Hash[1] = 0x92a790cd
+DUT Memory Array Hash[2] = 0xe1bbc7b6
+DUT Memory Array Hash[3] = 0xe556aa21
+DUT Memory Array Hash[4] = 0x12121430
+DUT Memory Array Hash[5] = 0x215acbe5
+DUT Memory Array Hash[6] = 0x8d548112
+DUT Memory Array Hash[7] = 0x823c39b7
+
+Hash Result Comparison:
+-----------------------
+Hash[0] = 0x07ba84ed - OK
+Hash[1] = 0x92a790cd - OK
+Hash[2] = 0xe1bbc7b6 - OK
+Hash[3] = 0xe556aa21 - OK
+Hash[4] = 0x12121430 - OK
+Hash[5] = 0x215acbe5 - OK
+Hash[6] = 0x8d548112 - OK
+Hash[7] = 0x823c39b7 - OK
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+                END TEST                 
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
